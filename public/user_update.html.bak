@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<div>
+				用户名:<input type="text" onblur="user_check()" id="uname" placeholder="输入用户名查询个人信息">
+				
+			</div>
+			<div>
+				编号: <input type="text" id="uid" readonly >		
+			</div>
+			<div>
+				手机号:<input type="text" id="phone">
+			</div>
+			<div>
+				邮箱:<input type="text" id="email">
+			</div>
+			<div>
+				密码:<input type="password" id="upwd">
+			</div>
+			<button onclick="user_update">修改</button>
+		</div>
+		<script src="./js/function.js"></script>
+	</body>
+</html>

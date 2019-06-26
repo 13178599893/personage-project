@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="css/user-reg.css">
+	<style>
+		blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{margin:0;padding:0};
+		div.ico.ico-phone{
+			width: 40px;
+		}
+	</style>
+	
+</head>
+<body>
+	<div class="div-locating">
+		<div class="div-border">
+			<ul>
+				<li>
+					<div class="div-first">  <!-- 	顶部文字	 -->
+						注册&nbsp;Smartisan&nbsp;ID
+					</div>
+				</li>
+				<li>				
+					<div><!-- 	第一个文本框	 -->
+						<img src="./ico/uname.ico" alt="" class="ico">
+						<input type="text" id="uname"  placeholder="用户名" class="input int1" >
+					</div>
+				</li>
+				<li>
+					<div><!-- 	第二个文本框	 -->
+						<img src="./ico/phone.ico" alt="" class="ico ico-phone">
+						<input type="text" id="phone" onfocus="reg_phone()" placeholder="手机号" class="input">	
+<!-- 						<span id="msg1"></span> -->
+					</div>
+				</li>
+				<li>
+					<div><!-- 	第三个文本框	 -->
+						<img src="./ico/email.ico" alt="" class="ico">
+						<input type="text" id="email" placeholder="邮箱" class="input">
+					</div>
+				</li>
+				<li>
+					<div><!-- 	第四个文本框	 -->
+						<img src="./ico/upwd.ico"  alt="" class="ico">
+						<input type="password" id="upwd" placeholder="密码" class="input">
+					</div>
+				</li>
+				<li>
+					<div><!-- 	第五个文本框	 -->
+						<img src="./ico/upwd.ico"  alt="" class="ico">
+						<input type="password" id="uupwd" placeholder="确认密码" class="input">
+					</div>
+				</li>
+				
+				<li>
+					<div class="div-box"><!-- 	多选按钮	 -->
+						<input type="checkbox" id="box" value="1">
+						<label for="box">
+							我已阅读并同意遵守
+							<a href="">法律声明</a>
+							和
+							<a href="">隐私条款</a>
+						</label>
+					</div>
+				</li>
+				<li>
+					<div><!-- 	提交按钮	 -->
+						<button onclick="reg_show()">注册</button>
+					</div>
+				</li>
+				<li>
+					<div>
+						<hr>
+					</div>
+				</li>
+				<li>				
+					<div class="div-end"><!-- 	底部文字，可跳登录页面	 -->
+						如果您已拥有&nbsp;Smartisan&nbsp;ID,&nbsp;则可在此
+						<a href="user_login.html">登录</a>
+					</div>
+				</li>
+				<li>
+					<div class="div-endend">
+						Copyright&nbsp;©&nbsp;2019&nbsp;smartisan.com&nbsp;版权所有
+						&nbsp;|&nbsp
+						<a href="">法律声明</a>
+						&nbsp;|&nbsp
+						<a href="">隐私条款</a>
+					</div>
+					<div class="div-endend" style="margin-top:-25px">
+						<a href="">京ICP备18020659号-2</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./js/function.js"></script>
+
+</body>
+</html>

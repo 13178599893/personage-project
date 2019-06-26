@@ -1,0 +1,167 @@
+body {
+background-image:url("../img/bg3.jpg");
+}
+.div-header {
+display:block;
+margin-top:110px;
+}
+.div-border {
+position:relative;
+border: 1px solid white;
+background-color:white;
+border-radius:15%;
+width: 300px;
+height:400px;
+}
+
+.div-footer{
+ margin-top:0px;
+}
+button {
+border-radius:5%;
+position:relative;
+top:20px;
+ width:270px;
+ height:30px;
+ background-color:#baccee;
+}
+.login-logo {
+width:150px
+}
+.login-uname {
+border-radius:5%;
+position:relative;
+top:-5px;
+width:250px;
+}
+.login-upwd {
+border-radius:5%;
+width:250px;
+}
+ul{
+padding:0;}
+.zfblogin{
+ width:20px;
+}
+.qqlogin {
+width:17px;
+}
+.weibologin{
+width:20px;
+}
+.wechatlogin{
+width:20px;
+}
+img {
+
+margin:0
+}
+.a-legtext{
+margin-left:70px;
+margin-right:3px;
+font-size:5px;
+}
+a.a-text {
+margin-left:3px;
+margin-right:3px;
+font-size:5px;
+}
+.a-ico{
+margin:5px;
+}
+.p-text {
+float:right;
+}
+.div-end{
+position:relative;
+top:-20px
+}
+.h5-text{
+position:relative;
+left:70px;
+top:-15px;
+}
+.box{
+width:20px;
+}
+.unameico{
+width:22px;
+}
+.upwdico{
+width:20px;
+position:relative;
+top:8px;
+}
+.regunameico {
+width:22px;
+position:relative;
+top:15px;
+}
+.regnumb{
+width:80px;
+margin-right:4px;
+}
+.regtuozi{
+width:17px;
+}
+.regupwd{
+width:18px;
+}
+.reguupwd{
+width:18px;
+}
+.div-one{
+position:relative;
+top:-20px;
+}
+.div-two{
+position:relative;
+top:-10px;
+}
+.div-three{
+position:relative;
+top:-5px;
+}
+.div-four{
+position:relative;
+top:0px;
+}
+.div-five{
+position:relative;
+top:10px;
+font-size:5px;
+
+}
+.div-six{
+position:relative;
+top:5px;
+}
+.div-seven{
+position:relative;
+top:15px;
+font-size:5px;
+}
+.div-title{
+position:relative;
+top:-20px;
+}
+.div-hr{
+position:relative;
+top:-20px;
+}
+.regunameico{
+position:relative;
+top:6px;
+}
+.regtuozi{
+position:relative;
+top:4px;
+}
+.regupwd{
+position:relative;
+top:4px;
+}
+.reguupwd{
+position:relative;
+top:4px;
+}

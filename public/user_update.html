@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/user-reg.css">
+		<style>
+			#content{
+				position: relative;
+				border:0;
+				top:150px;
+			}
+		</style>
+	</head>
+	<body onload="hint()">
+		<div id="content">
+			<div>
+				<img src="./ico/uname.ico" alt="" class="ico">
+				<input type="text"  id="uname" placeholder="输入用户名" class="input">
+			</div>
+			<div>
+				<img src="./ico/upwd.ico" alt="" class="ico">
+				<input type="password" id="upwd" placeholder="输入密码" class="input">
+			</div>
+			<div>
+				<img src="./ico/uname.ico" alt="" class="ico" >
+				<input type="text" id="uid" readonly  class="input" placeholder="用户ID,不可修改">		
+			</div>
+			<div>
+				<img src="./ico/phone.ico" alt="" class="ico" >
+				<input type="text" id="phone" class="input" placeholder="输入手机号码">
+			</div>
+			<div>
+				<img src="./ico/email.ico" alt="" class="ico" >
+				<input type="text" id="email" class="input" placeholder="输入邮箱">
+			</div>
+			<button onclick="user_check()">查询</button><br>
+			<button onclick="user_update()">修改</button>
+		</div>
+		<script src="./js/function.js"></script>
+	</body>
+</html>
