@@ -69,7 +69,15 @@ body{
     }
     #search{
         position: absolute;
-        top:44px;
-        right: 200px;
-        
+        top:6%;
+        right: 30%;
+        width:20% !important;
+        background-image:url("../img/search.png");
+        background-size:contain;
+        background-repeat: no-repeat;
+        padding-left: 45px !important;
+        background-position:4px 0;
+    }
+    .navbar .navbar-brand img{
+        width: 40px !important;
     }
