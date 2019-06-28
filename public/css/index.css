@@ -82,3 +82,12 @@ body{
     .navbar .navbar-brand img{
         width: 40px !important;
     }
+    .login-png{
+        width: 25px !important;
+        margin-right: 5px;
+    }
+    .login_shop{
+        margin-right: 2%;;
+        padding-top:5px; 
+        padding-bottom:5px; 
+    }
