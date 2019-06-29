@@ -102,9 +102,11 @@ body{
     }
     .title-div{
         background: #eee;
-        border:1px solid #ccc;
-        border-top-right-radius: 10px;
+        border:0px solid #ccc;
         border-top-left-radius: 10px;
+    }
+    .b-t-r-r{
+        border-top-right-radius: 10px;
     }
     .shop-banner-ico-prev{
         top:20px;
@@ -128,4 +130,14 @@ body{
     .F1-price{
         color:#e22222;
         font-size: 20px;
+    }
+    #shop-banner-div .col-3{
+        border: 1px solid #ccc !important;
+    }
+   .col-3{
+        border: 1px solid #ccc !important;
+    }
+    #shop-banner-div img{
+        margin-top: 40px;
+        margin-bottom: 20px;
     }
