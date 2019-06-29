@@ -1,0 +1,21 @@
+div ul a{
+    color:#fff;
+    font-size: 12px;
+    line-height: 28px;
+}
+#nav-nav a{
+    color: #000;
+    font-size: 14px;
+    line-height: 28px;
+}
+#top-nav{
+    height: 75px;
+    box-shadow: 0 5px 15px 0px #aaa;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 10000;
+}
+.top-price{
+    font-size: 14px !important;
+    color: #e22222;
+}
