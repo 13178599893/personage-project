@@ -25,6 +25,10 @@ body{
         border-bottom-right-radius: 6px;
         z-index: 10000;
     }
+    .top-price{
+        font-size: 14px !important;
+        color: #e22222;
+    }
     #banner .carousel-inner{
         border-radius: 8px !important;
         box-shadow: 0 15px 25px #ccc !important;
@@ -140,4 +144,32 @@ body{
     #shop-banner-div img{
         margin-top: 40px;
         margin-bottom: 20px;
+    }
+    a:hover{
+        text-decoration: none;
+    }
+    .btn-gray{
+        background: #ccc;
+    }
+    .F6-div{
+        margin-top: 10px;
+        height: 50%;
+    }
+    img{
+        transition:transform 1s linear;
+    }
+    #lyl,
+    #F2 img:hover,
+    #F3 img:hover,
+    #F4 img:hover,
+    #F5 img:hover,
+    #shop-banner img:hover{
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-name: shake;
+        animation-name: shake;
+    }
+    #lyl:hover{
+        -webkit-animation-name: rotateOut;
+        animation-name: rotateOut;
     }
