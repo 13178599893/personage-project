@@ -19,3 +19,7 @@ div ul a{
     font-size: 14px !important;
     color: #e22222;
 }
+#lyl{
+    -webkit-animation-name: jackInTheBox;
+  animation: jackInTheBox 2s infinite;
+}

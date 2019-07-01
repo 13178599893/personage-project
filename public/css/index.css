@@ -137,7 +137,7 @@ body{
     img{
         transition:transform 1s linear;
     }
-    #lyl,
+    
     #F2 img:hover,
     #F3 img:hover,
     #F4 img:hover,
@@ -147,10 +147,6 @@ body{
         animation-duration: 1s;
         -webkit-animation-name: shake;
         animation-name: shake;
-    }
-    #lyl:hover{
-        -webkit-animation-name: rotateOut;
-        animation-name: rotateOut;
     }
     #F2 div,
     #F3 div,
@@ -166,4 +162,11 @@ body{
     #F6
     {
         box-shadow:0px 10px 15px #aaa;
+    }
+    #shop-banner-div a button{
+        display: none;
+        position:relative;
+    }
+    #shop-banner-div:hover a button{
+        display: block;
     }
