@@ -3,8 +3,140 @@
 	padding:0;
 }
 body{
-	background: #e1e1e1;
+	background: #fff;
 	padding: 0 ;
-	font-family: "Helvetica Neue","PingFang SC",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","\\5FAE\8F6F\96C5\9ED1",STHeiti,sans-serif;
+	font-family:"Helvetica Neue","PingFang SC",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","\\5FAE\8F6F\96C5\9ED1",STHeiti,sans-serif;
 	font-size: 14px;
+}
+.details-top{
+	background: #f0f0f0;
+	border-bottom: 1px solid #aaa;
+	box-shadow: 1px 1px 3px #aaa; 
+	padding-left: 380px;
+    padding-right: 380px;
+}
+.details-top::before{
+	content:"";
+	display: table;
+}
+.font-12{
+	font-size: 12px;
+}
+a:hover{
+	font-weight:bolder;
+	text-decoration-color: #000;
+	text-decoration: none;
+}
+.F1-details-div{
+	margin-top: 50px;
+}
+.F1-details-div::before{
+	content: "";
+	display: table;
+}
+.details-circle::before{
+	content: "";
+	display: table;
+}
+.s1::before{
+	content: "";
+	display: table;
+}
+.s1{
+	width: 40px;
+	height: 40px;
+	background: #aaa;
+	border-radius: 50%;
+}
+.s2::before{
+	content: "";
+	display: table;
+}
+.s2{
+	width: 34px;
+	height: 34px;
+	background: #fff;
+	border-radius: 50%;
+	margin-top: 3px;
+	margin-left: 3px;
+	
+}
+.s3{
+	width: 30px;
+	height: 30px;
+	background: #000;
+	border-radius: 50%;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+.s4::before{
+	content: "";
+	display: table;
+}
+.s4{
+	width: 40px;
+	height: 40px;
+	background: #aaa;
+	border-radius: 50%;
+}
+.s5::before{
+	content: "";
+	display: table;
+}
+.s5{
+	width: 34px;
+	height: 34px;
+	background: #fff;
+	border-radius: 50%;
+	margin-top: 3px;
+	margin-left: 3px;
+	
+}
+.s6{
+	width: 30px;
+	height: 30px;
+	background: #eee;
+	border-radius: 50%;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+.s7::before{
+	content: "";
+	display: table;
+}
+.s7{
+	width: 40px;
+	height: 40px;
+	background: #aaa;
+	border-radius: 50%;
+}
+.s8::before{
+	content: "";
+	display: table;
+}
+.s8{
+	width: 34px;
+	height: 34px;
+	background: #fff;
+	border-radius: 50%;
+	margin-top: 3px;
+	margin-left: 3px;
+	
+}
+.s9{
+	width: 30px;
+	height: 30px;
+	background: #002299;
+	border-radius: 50%;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+.details-F2{
+	display: flex;
+	align-items: center;
+	border-bottom: 1px dashed #aaa;
+}
+.details-circle{
+	margin-top:30px; 
+	margin-bottom:30px; 
 }

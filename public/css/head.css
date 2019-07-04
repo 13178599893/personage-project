@@ -5,7 +5,7 @@
 body{
 	background: #e1e1e1;
 	padding: 0 ;
-	font-family: "Helvetica Neue","PingFang SC",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","\\5FAE\8F6F\96C5\9ED1",STHeiti,sans-serif;
+	font-family: Helvetica,"Helvetica Neue","PingFang SC",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","\\5FAE\8F6F\96C5\9ED1",STHeiti,sans-serif;
 	font-size: 14px;
 }
 div ul a{
@@ -13,7 +13,10 @@ div ul a{
     font-size: 12px;
     line-height: 28px;
 }
-
+#nav-nav{
+    padding-left: 380px;
+    padding-right: 380px;
+}
 #nav-nav a{
     color: #000;
     font-size: 14px;
@@ -49,7 +52,7 @@ div ul a{
 #search{
     position: relative;
     top:-120%;
-    left: 300%;
+    left: 500%;
     width:100% !important;
     background-image:url("../img/search.png");
     background-size:contain;
