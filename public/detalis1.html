@@ -47,8 +47,18 @@
 <div class="container">
     <div class="row m-0">
         <div class="col-6 p-0">
-            <div class="F1-details-div">
-                <img src="img/详情phone1.webp" alt="">
+            <div class="F1-details-div carousel" id="banner-details">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="detail-img1" src="img/手机列表详情1.webp" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="detail-img2" src="img/手机详情列表2.webp" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="detail-img3" src="img/手机详情列表3.webp" alt="">
+                    </div>
+                </div>
             </div>
         </div>
         <div class="col-6 p-0">
@@ -60,10 +70,10 @@
                 </div>
                 <div class="details-F2">
                     <span class="mr-5">颜色选择</span>
-                    <div class="d-inline-block details-circle mx-2">
+                    <div class="d-inline-block details-circle mr-2">
                         <div class="s1">
                             <div class="s2">
-                                <div class="s3 btn"></div>
+                                <div class="s3 btn" data-target="#banner-details" data-slide-to="0" ></div>
                             </div>
                         </div>
                     </div>
@@ -73,23 +83,31 @@
                     <div class="d-inline-block details-circle mr-2">
                         <div class="s4">
                             <div class="s5">
-                                <div class="s6 btn"></div>
+                                <div class="s6 btn" data-target="#banner-details" data-slide-to="1" ></div>
                             </div>
                         </div>
                     </div>
                     <div class=" mr-5">
-                            <span>纯白色</span>
-                        </div>
+                        <span>纯白色</span>
+                    </div>
                     <div class="d-inline-block details-circle mr-2">
                         <div class="s7">
                             <div class="s8">
-                                <div class="s9 btn"></div>
+                                <div class="s9 btn" data-target="#banner-details" data-slide-to="2" ></div>
                             </div>
                         </div>
                     </div>
                     <div>
                          <span>蓝色</span>
                     </div>
+                </div>
+                <div class="details-F3 py-4">
+                    <span class="mr-5 mt-2">容量选择</span>
+                    <a href="#" class="btn btn-outline-secondary mr-4 mb-3 active"> 6G + 64GB</a>
+                    <a href="#" class="btn btn-outline-secondary mr-4 mb-3"> 6G + 128GB</a>
+                    <a href="#" class="btn btn-outline-secondary mb-3 "> 8G + 128GB </a>
+                    <a href="#" class="btn btn-outline-secondary mr-4 ml-12"> 8G + 512GB </a>
+                    <a href="#" class="btn btn-outline-secondary"> 8G + 1T </a>
                 </div>
             </div>
         </div>

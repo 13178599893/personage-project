@@ -140,3 +140,13 @@ a:hover{
 	margin-top:30px; 
 	margin-bottom:30px; 
 }
+
+
+.details-F3{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.ml-12{
+	margin-left:19% !important;
+}

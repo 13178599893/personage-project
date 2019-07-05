@@ -12,9 +12,6 @@ body{
         border-radius: 8px !important;
         box-shadow:0px 10px 15px #aaa;
     } 
-    #a1:hover #tab1{
-        display: block;
-    }
     .carousel-control-prev,
     .carousel-control-next{
         width: 30px;
