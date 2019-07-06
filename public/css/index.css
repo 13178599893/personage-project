@@ -94,8 +94,10 @@ body{
     #shop-banner img:hover{
         -webkit-animation-duration: 1s;
         animation-duration: 1s;
-        -webkit-animation-name: shake;
-        animation-name: shake;
+        -webkit-animation-name: rubberBand;
+        animation-name: rubberBand;
+        /* -webkit-animation-name: rubberBand;
+  animation-name: rubberBand; */
     }
     #F2 div,
     #F3 div,

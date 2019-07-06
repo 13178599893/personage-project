@@ -85,3 +85,6 @@ div ul a{
 .w-85{
     width: 85%;;
 }
+a:hover{
+    text-decoration: none;
+}
