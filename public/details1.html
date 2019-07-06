@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>details</title>
+<!-- 引入4个文件,必须注意导入顺序 -->
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="css/details.css">
+</head>
+<body>
+<div class="container-fluid p-0">
+    <div class="details-top row m-0">
+        <div class="col-10 p-0">
+            <ul class="list-unstyled d-flex my-2 ">
+                <li class="mx-4">
+                    <a href="#" class="text-muted font-12">概览</a>
+                </li>
+                <li class="mr-4">
+                    <a href="#" class="text-muted font-12">设计</a>
+                </li>
+                <li class="mr-4">
+                    <a href="#" class="text-muted font-12">功能</a>
+                </li>
+                <li class="mr-4">
+                    <a href="#" class="text-muted font-12">操作系统</a>
+                </li>
+                <li>
+                    <a href="#" class="text-muted font-12">技术规格</a>
+                </li>
+            </ul>
+        </div>
+        <div class="clo-2 p-0">
+            <ul class="list-unstyled d-flex my-2">
+                <li>
+                    <a href="#" class="text-muted font-12">优先购买码</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row m-0">
+        <div class="col-6 p-0">
+            <div class="F1-details-div carousel" id="banner-details">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="detail-img1" src="img/手机列表详情1.webp" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="detail-img2" src="img/手机详情列表2.webp" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="detail-img3" src="img/手机详情列表3.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 p-0">
+            <div class="F1-details-div">
+                <div>
+                    <h3 class="mb-4">坚果R1</h3>
+                    <h6 class="text-muted mb-mypx"> 次世代旗舰手机，内藏来自未来的“电脑” </h6>
+                    <hr class="m-0">
+                </div>
+                <div class="details-F2">
+                    <span class="mr-5">颜色选择</span>
+                    <div class="d-inline-block details-circle mr-2">
+                        <div class="s1">
+                            <div class="s2">
+                                <div class="s3 btn" data-target="#banner-details" data-slide-to="0" ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>碳黑色（细红线版）</span>
+                    </div>
+                    <div class="d-inline-block details-circle mr-2">
+                        <div class="s4">
+                            <div class="s5">
+                                <div class="s6 btn" data-target="#banner-details" data-slide-to="1" ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" mr-5">
+                        <span>纯白色</span>
+                    </div>
+                    <div class="d-inline-block details-circle mr-2">
+                        <div class="s7">
+                            <div class="s8">
+                                <div class="s9 btn" data-target="#banner-details" data-slide-to="2" ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                         <span>蓝色</span>
+                    </div>
+                </div>
+                <div class="details-F3 py-4">
+                    <span class="mr-5 mt-2">容量选择</span>
+                    <a href="#" class="btn btn-outline-secondary mr-4 mb-3"> 6G + 64GB</a>
+                    <a href="#" class="btn btn-outline-secondary mr-4 mb-3"> 6G + 128GB</a>
+                    <a href="#" class="btn btn-outline-secondary mb-3 "> 8G + 128GB </a>
+                    <a href="#" class="btn btn-outline-secondary mr-4 ml-12"> 8G + 512GB </a>
+                    <a href="#" class="btn btn-outline-secondary"> 8G + 1T </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <hr>
+    </div>
+    <div>
+        <h2 class="font-weight-bold my_font my-5">技术规格</h2>
+    </div>
+    <div>
+        <hr>
+    </div>
+    <div class="row m-0">
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">容量和内存</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4">
+                <ul class="list-unstyled d-flex mb-5">
+                    <li class="my_p_m">
+                        <p>&nbsp;</p>
+                        <p><span>LPDDR4X</span>  双通道</p>
+                        <p><span> UFS</span> 2.1</p>
+                    </li>
+                    <li class="my_p_m">
+                        <p>6 + 64 版</p>
+                        <p><span>6GB</span>  内存</p>
+                        <p><span>64GB</span>  机身存储</p>
+                    </li>
+                    <li class="my_p_m">
+                        <p>6 + 128 版</p>
+                        <p><span>6GB</span>  内存</p>
+                        <p><span>128GB</span>  机身存储</p>
+                    </li>
+                    <li class="my_p_m">
+                        <p>8 + 128 版</p>
+                        <p><span>8GB</span>  内存</p>
+                        <p><span>128GB</span>  机身存储</p>
+                    </li>
+                    <li class="my_p_m">
+                        <p>8 + 512 版</p>
+                        <p><span>8GB</span>  内存</p>
+                        <p><span>512GB</span>  机身存储</p>
+                    </li>
+                    <li class="my_p_m">
+                        <p>8 + 1T 版</p>
+                        <p><span> 8GB</span> 内存</p>
+                        <p><span> 1TB</span> 机身存储</p>
+                    </li>
+                </ul>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">外观</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <table class="text-center">
+                    <tr>
+                        <th></th>
+                        <th>6 + 64 版</th>
+                        <th>6 + 128 版</th>
+                        <th>8 + 128 版</th>
+                        <th>8 + 512 版</th>
+                        <th>8 + 1T 版</th>
+                    </tr>
+                    <tr>
+                        <td class="w-130">碳黑色<br>(细红线版)</td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                    </tr>
+                    <tr>
+                        <td class="w-130">纯白色</td>
+                        <td>&nbsp;</td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="w-130">孔雀蓝</td>
+                        <td>&nbsp;</td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                        <td><img src="img/ok.png" class="my_img_w" alt=""></td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <hr >
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">机身尺寸和重量</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">高度 = 153.3mm</p>
+                <p class="mb-2">宽度 = 74.5mm</p>
+                <p class="mb-2">厚度 = 7.9mm</p>
+                <p class="mb-2">重量 = 170g</p>
+                <img class="w-75" src="img/details-size.png" alt="">
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">处理器平台</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p>Qualcomm® 骁龙™ 845 处理器</p>
+                <p>10nm 先进制程</p>
+                <p>单核主频可达 2.8GHz</p>
+                <p>Adreno™ 630 图形处理器，主频可达 700MHz</p>
+                <p>配备人工智能引擎（AI Engine）</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">蜂窝网络</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p>双卡双待全网通</p>
+                <p>全网通支持中国移动、中国联通和中国电信</p>
+                <p>支持 VoLTE 高质量宽带通话</p>
+                <p>支持三载波聚合</p>
+                <p>支持 LTE B41 4x4 MIMO</p>
+                <table class="text-center">
+                    <tr>
+                        <td></td>
+                        <td>网络制式</td>
+                        <td>支持频段</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="w-100-px">4G</td>
+                        <td class="w-130">FDD-LTE</td>
+                        <td>B1 / B2 / B3 / B4 / B5 / B7 / B8 / B12 / B17 / B18 / B19 / B20 / B25 / B26 / B28 </td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td>TD-LTE</td>
+                        <td>B34 / B38 / B39 / B40 / B41 <span> （注：B41 支持 2535MHz-2655MHz 频段） </span></td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">3G</td>
+                        <td>WCDMA</td>
+                        <td>B1 / B2 / B3 / B4 / B5 / B6 / B8 / B9 / B19</td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td>TD-SCDMA</td>
+                        <td>B34 / B39</td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td>CDMA</td>
+                        <td>BC0 / BC1 / BC6</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">2G</td>
+                        <td>GSM</td>
+                        <td>B2 / B3 / B5 / B8</td>
+                    </tr>
+                    <tr>
+                        <!-- <td></td> -->
+                        <td>CDMA 1X</td>
+                        <td>BC0 / BC1 / BC6</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">双卡支持与全网通</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">双 Nano-SIM 卡槽，任意卡槽均可设置为主卡</p>
+                <p class="mb-2">双卡不限运营商，均可 4G 在网</p>
+                <p class="mb-2">支持移动、联通、电信 4G+/4G/3G/2G</p>
+                <p class="mb-2">支持双卡双待 VoLTE，支持中国移动、中国电信 VoLTE 高清语音业务</p>
+                <p class="mb-2">支持中国电信双卡 VoLTE 待机</p>
+                <span class=" text-muted font-12">注：需主副卡同时开通 VoLTE 业务，如副卡未开通 VoLTE 会出现无服务情况，主卡不受影响</span>
+                <img class="w-100 my-4" src="img/detail-安装1.png" alt="">
+                <p class="mb-2">SIM<span class="text-muted">卡安装说明：</span>  </p>
+                <p class="mb-2 text-muted font-12"><span class="font-weight-bold">·</span> 坚果 R1 移动电话使用 Nano-SIM 卡</p>
+                <p class="mb-2 text-muted font-12"><span class="font-weight-bold">·</span> 插入卡针可弹出卡槽</p>
+                <p class="mb-2 text-muted font-12"><span class="font-weight-bold">·</span> 可放入两张 Nano-SIM 卡</p>
+                <p class="mb-2 text-muted font-12"><span class="font-weight-bold">·</span> 使用剪卡器得到的 Nano-SIM 卡可能导致通信信号不良，由此造成的问题不在锤子商城的保修范围之内</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">无线与网络</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">802.11 a/b/g/n/ac 无线网络，支持 2.4 + 5GHz 频段</p>
+                <p class="mb-2">支持 WLAN 2x2 MIMO</p>
+                <p class="mb-2">支持 WiFi Direct 与 WiFi Display</p>
+                <p class="mb-2">蓝牙 5.0</p>
+                <p class="mb-2">GPS / 辅助 GPS、GLONASS、北斗定位系统</p>
+                <p class="mb-2">支持无线网络定位和蜂窝网络定位</p>
+                <p class="mb-2">NFC+eSE，支持读卡、写卡、卡模拟和 P2P 模式</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">电池与快充</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">典型值 3600mAh</p>
+                <p class="mb-2">支持 QuickCharge 4+ 18W 快速充电</p>
+                <p class="mb-2">支持 PD3.0 充电协议</p>
+                <p class="mb-2">支持快速无线充电，峰值输出功率可达 10W</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">屏幕</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">6.17 英寸 In-Cell 全高清显示屏</p>
+                <p class="mb-2">2242 x 1080 分辨率，403 ppi</p>
+                <p class="mb-2">康宁®第三代大猩猩®玻璃</p>
+                <p class="mb-2">1500:1 对比度（典型值）</p>
+                <p class="mb-2">96% NTSC 色域（典型值）</p>
+                <p class="mb-2">全覆盖 Display P3 广色域</p>
+                <p class="mb-2">支持阳光屏，强光下观看更清晰</p>
+                <p class="mb-2">支持护眼模式，减少屏幕蓝光</p>
+                <p class="mb-2">支持调节屏幕色温</p>
+                <p class="mb-2">支持压力感应触控</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">解锁与指纹</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <ul class="list-unstyled d-flex ">
+                    <li class="mr-20">
+                        <p class="mb-2">指纹解锁</p>
+                        <p class="mb-2 text-muted">后置电容式指纹识别器</p>
+                        <p class="mb-2 text-muted">响应速度达 0.17s</p>
+                        <p class="mb-2 text-muted">最多可录入 10 枚指纹</p>
+                        <p class="mb-2 text-muted">支持微信和支付宝指纹支付</p>
+                    </li>
+                    <li>
+                        <p class="mb-2">人脸解锁</p>
+                        <p class="mb-2 text-muted">前摄像头人脸识别</p>
+                        <p class="mb-2 text-muted">可检测 1024 个特征维度</p>
+                        <p class="mb-2 text-muted">Face++ 旷视人脸识别算法</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">后置相机</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">1200 万像素 + 2000 万像素双摄像头</p>
+                <p class="mb-2">双高显指闪光灯</p>
+                <p class="mb-2">ArcSoft 实时背景虚化算法</p>
+                <p class="mb-2">Almalence 超级解析算法</p>
+                <p class="mb-2">TDK Invensense 视频防抖算法</p>
+                <p class="mb-2">HDR 高动态范围调节技术</p>
+                <ul class="list-unstyled d-flex mt-5">
+                    <li class="mr-20">
+                        <p class="mb-2">主摄像头</p>
+                        <p class="mb-2 text-muted">索尼 IMX363 传感器</p>
+                        <p class="mb-2 text-muted">1200 万像素</p>
+                        <p class="mb-2 text-muted">1.4 μm 大像素尺寸</p>
+                        <p class="mb-2 text-muted">ƒ/1.8 大光圈</p>
+                        <p class="mb-2 text-muted">6 片式镜头</p>
+                        <p class="mb-2 text-muted">支持 4 轴光学防抖</p>
+                        <p class="mb-2 text-muted">支持 Dual PD 极速对焦</p>
+                    </li>
+                    <li class="ml-3">
+                        <p class="mb-2">副摄像头</p>
+                        <p class="mb-2 text-muted">索尼 IMX350 传感器</p>
+                        <p class="mb-2 text-muted">2000 万像素</p>
+                        <p class="mb-2 text-muted">1 μm 像素尺寸</p>
+                        <p class="mb-2 text-muted">ƒ/1.75 大光圈</p>
+                        <p class="mb-2 text-muted">6 片式镜头</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">前置相机</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">2400 万像素四合一前置摄像头</p>
+                <p class="mb-2">ƒ/2.0 光圈</p>
+                <p class="mb-2">ArcSoft 背景虚化算法</p>
+                <p class="mb-2">ArcSoft 实时美颜算法</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">视频拍摄</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">前置相机：1080p FHD 视频摄像，每秒 30 帧</p>
+                <p class="mb-2">主相机：4K（分辨率3840 × 2160）视频摄像，每秒 30 帧</p>
+                <p class="mb-2">1080p FHD 慢动作视频摄像，每秒 120 帧</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">音频播放</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                    <p class="mb-2">AI 智能降噪芯片</p>
+                    <p class="mb-2">立体环绕声外放系统</p>
+                    <table class="text-center">
+                        <tr>
+                            <td>类型</td>
+                            <td>支持音频文件格式</td>
+                            <td>支持音频解码格式</td>
+                        </tr>
+                        <tr>
+                            <td>音频格式</td>
+                            <td>MP3, AAC, AMR, DTS</td>
+                            <td>AAC/AAC+/eAAC+, MP3, NB-AMR, WB-AMR, DTS</td>
+                        </tr>
+                        <tr>
+                            <td>无损格式</td>
+                            <td>AIFF, ALAC(Apple Lossless), FLAC, APE, WAV, DFF, DSF</td>
+                            <td>————</td>
+                        </tr>
+                    </table>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">视频播放</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <table>
+                    <tr>
+                        <th>编码方式</th>
+                        <th>支持音频编码格式</th>
+                        <th>支持视频文件格式</th>
+                        <th>详情</th>
+                    </tr>
+                    <tr>
+                        <td>HEVC (H.265)</td>
+                        <td rowspan="5"></td>
+                        <td>.mp4, .mkv, .webm, .ts, .3gp</td>
+                        <td>
+                            <p class="mb-2">支持 1080P，240 fps </p>
+                            <p class="mb-2"> 最高支持 4K（4096X2160）分辨率 60 fps </p>
+                            <p class="mb-2">Main Profile 8 bit 最高可达 level 6 </p>
+                            <p class="mb-2">Main Profile 10 bit 最高可达 level 6 </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>H.264</td>
+                        <!-- <td></td> -->
+                        <td> .mp4, .mkv, .webm, .ts, .3gp, .mov</td>
+                        <td>
+                            <p class="mb-2">支持1080P, 240fps</p>
+                            <p class="mb-2"> 最高支持4K (4096X2160) 分辨率 </p>
+                            <p class="mb-2"> 60fps 最高可达 Level 5.2编码 </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>H.263</td>
+                        <!-- <td></td> -->
+                        <td>.mp4, .avi, .3gp, .mov</td>
+                        <td>最高可达 Profile 0, Level 70 </td>
+                    </tr>
+                    <tr>
+                        <td>MPEG-2</td>
+                        <!-- <td></td> -->
+                        <td>.avi, .mkv, .webm, .ts</td>
+                        <td>最高可达 1080P, 30fps, Main Profile 编码</td>
+                    </tr>
+                    <tr>
+                        <td>MPEG-4</td>
+                        <!-- <td></td> -->
+                        <td>.mp4, .mkv, .webm, .avi, .3gp, .mov</td>
+                        <td>最高可达 Simple Profile Level 6 编码 </td>
+                    </tr>
+                    <tr>
+                        <td>VP8</td>
+                        <td rowspan="3">AAC-LC, Vorbis</td>
+                        <td> .webm</td>
+                        <td>
+                            <p class="mb-2">支持 1080P 120fps </p>
+                            <p class="mb-2">最高支持4K (4096X2160) 分辨率 30fps </p>
+                            <p class="mb-2">Profile 0 (Main), Version 0-3 </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>VP9</td>
+                        <!-- <td></td> -->
+                        <td> .webm</td>
+                        <td>
+                            <p class="mb-2"> 支持 1080P 240fps </p>
+                            <p class="mb-2"> 最高支持4K (4096X2160) 分辨率 60fps </p>
+                            <p class="mb-2">Profile 0 8-bit </p>
+                            <p class="mb-2">最高支持 level 5.1 Profile 2 10-bit </p>
+                            <p class="mb-2">最高支持 level 5.1 </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Xvid</td>
+                        <!-- <td></td> -->
+                        <td>.avi, .mkv</td>
+                        <td>Advanced simple profile 最高可达 level 5</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">传感器与算法</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">陀螺仪</p>
+                <p class="mb-2">重力传感器</p>
+                <p class="mb-2">地磁传感器</p>
+                <p class="mb-2">环境光传感器</p>
+                <p class="mb-2">霍尔传感器</p>
+                <p class="mb-2">超声波接近感应算法</p>
+                <p class="mb-2">AI 音频降噪算法</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">触控与反馈</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">支持压感触控技术</p>
+                <p class="mb-2">线性震动马达</p>
+                <p class="mb-2">支持 72 种场景 ，21 种震动效果</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">操作系统</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">基于 Android™ 深度定制的 Smartisan OS</p>
+                <p class="mb-2">支持语言：中文简体、中文繁体、英语、日语、韩语</p>
+                <p class="mb-2 font-12 text-muted">注：部分系统功能需要 Smartisan ID 与互联网连接</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">按键与接口</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <img src="img/detail-接口.jpg" alt="">
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-3 p-0">
+            <div class="mt-4">
+                <p class="ml-4">包装内容</p>
+            </div>
+        </div>
+        <div class="col-9 p-0">
+            <div class="mt-4 mb-5">
+                <p class="mb-2">坚果 R1 手机</p>
+                <p class="mb-2">坚果 Type-C To Type-C 带灯数据线</p>
+                <p class="mb-2">坚果 QuickCharge 4+ 快速充电器</p>
+                <p class="mb-2">USB Type-C 与 3.5mm 耳机转接线</p>
+                <p class="mb-2">取卡针</p>
+                <p class="mb-2">坚果手机 R1 产品使用说明书</p>
+                <p class="mb-2">坚果手机 R1 三包凭证</p>
+                <p class="mb-2">电子信息产品有害物质说明书</p>
+                <p class="mb-2">数据线仅支持 USB 2.0</p>
+            </div>
+            <div>
+                <hr>
+            </div>
+        </div>
+        <div class="col-12 p-0">
+            <div class="mt-4">
+                <p class="ml-4">注：1. 本页面所列配置及参数均以实际上市产品为准，如有变更，恕不另行通知；</p>
+                <p class="ml-5">2. Android™ is a trademark of Google Inc.</p>
+                <p class="ml-5">3. 使用本设备时，请与植入的医疗设备（植入耳蜗，心脏起搏器等）至少保持15厘米距离</p>
+                <p class="ml-5">4. 本产品电磁辐射比吸收率（SAR）最大值小于2.0W/kg，符合国家标准GB21288-2007的要求</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

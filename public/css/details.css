@@ -150,3 +150,47 @@ a:hover{
 .ml-12{
 	margin-left:19% !important;
 }
+.mb-mypx{
+	margin-bottom: 30px !important;
+}
+.my_font{
+	font-size: 25px;
+}
+.my_p_m p{
+	margin-bottom: 0;
+}
+.my_p_m{
+	margin-right: 30px;
+}
+.my_p_m p:first-child{
+	color:#000;
+	margin-bottom:10px;
+}
+.my_p_m p:nth-child(2),
+.my_p_m p:nth-child(3)
+{
+	color:#aaa;
+}
+.my_p_m p span{
+	color: #222
+}
+.my_img_w{
+	width: 15%;
+}
+table th{
+	border: 1px solid #aaa;
+	padding:10px 0;
+}
+table td{
+	border: 1px solid #aaa;
+	padding:10px 10px;
+}
+.w-130{
+	width: 130px;
+}
+.w-100-px{
+	width: 100px;
+}
+.mr-20{
+	margin-right:20% !important;
+}
