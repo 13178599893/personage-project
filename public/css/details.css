@@ -142,10 +142,12 @@ a:hover{
 }
 
 
-.details-F3{
+.details-F3
+{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	border-bottom: 1px solid #ccc;
 }
 .ml-12{
 	margin-left:19% !important;
@@ -197,4 +199,49 @@ table td{
 .fixed{
 	position:fixed !important;
 	z-index: 10000 !important;
+}
+.ml-45{
+	margin-left: 45%;
+}
+.F1-details-div h4{
+	color: #f00;
+}
+.carousel-item img{
+	cursor: pointer;
+}
+.details-F4{
+	padding-top: 35px;
+	padding-bottom: 35px;
+	border-bottom:1px dashed #aaa;
+}
+.details-F5{
+	padding-top:35px;
+	padding-bottom:35px;
+	border-bottom:1px solid #ccc;
+}
+.details-F5 input{
+	width: 10% !important;
+	cursor: text !important;
+}
+.details-F5 button{
+	width: 2rem !important;
+	height: 2rem !important;
+	background: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+
+}
+.details-F5 button:hover{
+	transform: scale(0.9)
+}
+.btn-outline-light{
+	background: none !important;
+	color:#000 !important;
+}
+.mt-5b{
+	margin-top:5%;
+	background: #e1e1e1;
+	padding:15px 0 15px 25px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
