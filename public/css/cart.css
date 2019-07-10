@@ -98,20 +98,30 @@ body{
     width: 137px;
     height: 38px;
 } */
+.w-52{
+    width: 50.5%;
+}
 .w-137{
     width: 137px;
 }
 .span-height{
     height: 38px;
 }
+.shopcart-F2{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
 .cart-title{
     line-height: 38px;
     background-color: #eee;
 }
 .cart-items{
+    display: flex;
     height: 110px;
-    line-height: 110px;
+    align-items: center;
     text-align: center;
+    justify-content:flex-end !important;
+    border: 1px solid #eee;
 }
 .checkbox{
     display: inline-block;
@@ -123,16 +133,20 @@ body{
 }
 .cart-first{
     width: 74px;
+    position: relative;
+    right:77%;
 }
 .cart-two{
 
 }
+.cart-seven,
 .cart-six,
 .cart-four{
     width: 137px;
 }
 .cart-five{
-
+    width: 137px;
+    text-align: center;
 }
 .cart-five input{
 	width: 50px !important;
@@ -144,11 +158,71 @@ body{
 	background: #fff;
 	border-radius: 50%;
     cursor: pointer;
-    margin-top:35px; 
 }
 .cart-five button:hover{
 	transform: scale(0.9)
 }
-.btn-btn{
-    line-height: 1.7rem;
+.line-h{
+    line-height: 32px;
+}
+.times{
+    height: 20px;
+    width: 20px;
+    border:1px solid #aaa;
+    border-radius: 50%;
+    margin:auto;
+    color: #000;
+    background: #eee;
+}
+.times:hover{
+    text-decoration: none;
+}
+.cart-footer{
+    display: flex;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.font-18{
+    font-size: 18px;
+}
+.text-red{
+    color: rgb(250, 36, 36);
+    font-size: 18px;
+}
+.cart-footer-right{
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    position: relative;
+    left: 42%;
+}
+.steele{
+    display: block;
+    width: 128px;
+    height: 48px;
+    background-color: #5079d9;
+    font-size: 18px;
+    color:#fff;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 8px;
+}
+.steele:hover{
+    color: #fff;
+    text-decoration: none;
+    background-color: #3970f0
+}
+.b-s-l{
+    border-left: 1px solid #aaa;
+}
+.footer-left{
+    padding: 31px 0;
+    margin-left: 30px;
+    vertical-align: middle;
+}
+.po-t{
+    position: relative;
+    top: 5px;
 }
