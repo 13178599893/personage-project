@@ -65,7 +65,7 @@ div ul a{
     margin: 5% 5%;
 }
 .tab-content{
-    position: absolute;
+    position:absolute;
     background: #fff;
     z-index: 10010;
     color: #aaa;
@@ -87,6 +87,3 @@ div ul a{
 a:hover{
     text-decoration: none;
 }
-#top-nav #nav-nav:hover> .tab-pane {
-    display: block !important;
-  }
