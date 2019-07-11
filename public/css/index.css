@@ -87,15 +87,24 @@ body{
         transition:transform 1s linear;
     }
     
-    #F2 img:hover,
-    #F3 img:hover,
-    #F4 img:hover,
-    #F5 img:hover,
-    #shop-banner img:hover{
-        -webkit-animation-duration: 1s;
+    #F2 .col-3.p-0,
+    #F3 .col-3.p-0,
+    #F4 .col-3.p-0,
+    #F5 .col-3.p-0,
+    #shop-banner .col-3.p-0{
+    padding-top:20px !important; 
+    }
+    #F2 .col-3.p-0:hover,
+    #F3 .col-3.p-0:hover,
+    #F4 .col-3.p-0:hover,
+    #F5 .col-3.p-0:hover,
+    #shop-banner .col-3.p-0:hover{
+        box-shadow:-8px -8px 15px  #ddd inset,8px 8px 15px  #ddd inset;
+        transition: all 0.2s;
+        /* -webkit-animation-duration: 1s;
         animation-duration: 1s;
         -webkit-animation-name: rubberBand;
-        animation-name: rubberBand;
+        animation-name: rubberBand; */
         /* -webkit-animation-name: rubberBand;
   animation-name: rubberBand; */
     }
