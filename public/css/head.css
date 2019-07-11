@@ -59,7 +59,7 @@ div ul a{
     background-repeat: no-repeat;
     padding-left: 45px !important;
     background-position:4px 0;
-    z-index: 10090;
+    z-index: 10020;
 }
 .tab-pane li{
     margin: 5% 5%;
@@ -71,11 +71,6 @@ div ul a{
     color: #aaa;
     justify-content:space-around !important;
 }
- .w-0{
-    overflow: hidden;
-    height: 0;
-   
-} 
 .list-group-item{
     padding: 0;
     width: 100px;
