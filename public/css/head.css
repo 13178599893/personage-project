@@ -87,3 +87,6 @@ div ul a{
 a:hover{
     text-decoration: none;
 }
+#top-nav #nav-nav:hover> .tab-pane {
+    display: block !important;
+  }
