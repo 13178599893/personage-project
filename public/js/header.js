@@ -37,12 +37,7 @@ for (let i = 0; i < as.length; i++) {
   console.log(tabThis);
   //为每个as集合中的元素绑定事件处理函数
   as[i].onmouseenter = function() {
-    tabThis.parentElement.onmouseenter=function(){
-        tabThis.className += " active show";
-    }
-    tabThis.parentElement.onmouseleave=function(){
-        tabThis.className = "tab-pane";
-    }
+    
     if (tabThis.className == "tab-pane active show") {
       tabThis.className = "tab-pane";
       console.log(tabThis.className);
@@ -54,7 +49,16 @@ for (let i = 0; i < as.length; i++) {
       tabThis.className += " active show";
       console.log(tabThis.className);
     }
+    //悬停在上方导航栏时需要给隐藏菜单加悬停事件,不然鼠标一拿开就隐藏
+    tabThis.parentElement.onmouseenter=function(){
+        tabThis.className += " active show";
+    }
+    //移开事件,如果不加移除鼠标事件则隐藏菜单一直显示
+    tabThis.parentElement.onmouseleave=function(){
+        tabThis.className = "tab-pane";
+    }
   };
+  //导航栏的隐藏事件
 as[i].onmouseleave=function(){
     tabThis.className = "tab-pane";
 }
