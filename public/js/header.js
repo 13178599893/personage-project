@@ -1,5 +1,4 @@
-var as = document.querySelectorAll("[data-toggle='tab']");
-console.log(as);
+
 //    for(var a of as){
 //        console.log(a)
 //        a.onclick=function(){
@@ -34,11 +33,11 @@ for (let i = 0; i < as.length; i++) {
   let tabThis = tabPaneArr[i];
   console.log(tabThis);
   as[i].onclick = function() {
-    
     if (tabThis.className == "tab-pane active show") {
       tabThis.className = "tab-pane";
       console.log(tabThis.className);
     } else {
+        //每次添加显示的类名时先重置每一项的类名,防止多个显示
         for (var item of tabPaneArr) {
             item.className = "tab-pane";
         }
