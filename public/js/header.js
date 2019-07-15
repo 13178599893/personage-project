@@ -25,14 +25,24 @@
 //            }
 //        }
 //    }
+//找到所有的要触发事件的元素
 var as = document.querySelectorAll("[data-toggle='tab']");
 console.log(as);
+//找到所有要发生改变的元素
 let tabPaneArr = document.getElementsByClassName("tab-pane"); // [0,1,2,3,4,5]
 console.log(tabPaneArr);
+//遍历要触发事件
 for (let i = 0; i < as.length; i++) {
   let tabThis = tabPaneArr[i];
   console.log(tabThis);
-  as[i].onclick = function() {
+  //为每个as集合中的元素绑定事件处理函数
+  as[i].onmouseenter = function() {
+    tabThis.parentElement.onmouseenter=function(){
+        tabThis.className += " active show";
+    }
+    tabThis.parentElement.onmouseleave=function(){
+        tabThis.className = "tab-pane";
+    }
     if (tabThis.className == "tab-pane active show") {
       tabThis.className = "tab-pane";
       console.log(tabThis.className);
@@ -45,4 +55,7 @@ for (let i = 0; i < as.length; i++) {
       console.log(tabThis.className);
     }
   };
+as[i].onmouseleave=function(){
+    tabThis.className = "tab-pane";
+}
 }
