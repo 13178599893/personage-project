@@ -13,6 +13,7 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="css/head.css">
+
 </head>
 <body>
 <div class="container-fluid p-0">
@@ -304,35 +305,6 @@
         </div>
     </div>
 </div>
-
-<script>
-   (function(){
-       var as=document.querySelectorAll("[data-toggle='tab']")
-       console.log(as)
-       for(var a of as){
-           console.log(a)
-           a.onclick=function(){
-               var a=this;
-               var divs=document.getElementsByClassName("tab-pane");
-               console.log(divs)
-               for(var div of divs){
-                    // console.log(style)
-                       div.getAttribute("class")
-                       console.log(div.getAttribute("class"))
-                    if(div.className="tab-pane&&active&&show"){
-                        console.log(1)
-                        div.className="tab-pane";
-                        console.log(2)
-                    // }else if(div.className=="active"){
-                    //         div.className="none";
-                        // var active=document.querySelector("#tab-content>.active")
-                        // console.log(active)
-                        // active!==null&&(div.className="none");
-                    }
-               }
-           }
-       }
-   })()
-</script>
+<script src="js/header.js"></script>
 </body>
 </html>
