@@ -15,7 +15,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="row m-0">
+    <div class="row m-0" id="shop-cart">
         <div class="col-12 p-0 ">
             <div class="bg-bor py-3 pl-4">
                 <h4 class="m-0 font-20">购物清单</h4>
@@ -38,7 +38,7 @@
                         <td class="cart-two"></td>
                         <td class="cart-three"></td>
                         <td class="cart-four">
-                            <span class="m-0">¥59.00</span>
+                            <span class="m-0 price">¥59.00</span>
                         </td>
                         <td class="cart-five">
                             <button>-</button>
@@ -46,10 +46,10 @@
                             <button>+</button>
                         </td>
                         <td class="cart-six">
-                            <span class="m-0">¥59.00</span>
+                            <span class="m-0 my_price">¥59.00</span>
                         </td>
                         <td class="cart-seven">
-                            <a href="javascript:;" class="times d-block">&times;</a>
+                            <button class="times">&times;</button>
                         </td>
                     </tr>
                 </table>
@@ -63,7 +63,7 @@
                         <td class="cart-two"></td>
                         <td class="cart-three"></td>
                         <td class="cart-four">
-                            <span class="m-0">¥59.00</span>
+                            <span class="m-0 price">¥59.00</span>
                         </td>
                         <td class="cart-five">
                             <button>-</button>
@@ -71,10 +71,10 @@
                             <button>+</button>
                         </td>
                         <td class="cart-six">
-                            <span class="m-0">¥59.00</span>
+                            <span class="m-0 my_price">¥59.00</span>
                         </td>
                         <td class="cart-seven">
-                            <a href="javascript:;" class="times d-block">&times;</a>
+                            <button class="times">&times;</button>
                         </td>
                     </tr>
                 </table>
@@ -88,7 +88,7 @@
                         <td class="cart-two"></td>
                         <td class="cart-three"></td>
                         <td class="cart-four">
-                            <span class="m-0">¥59.00</span>
+                            <span class="m-0 price">¥59.00</span>
                         </td>
                         <td class="cart-five">
                             <button>-</button>
@@ -96,17 +96,17 @@
                             <button>+</button>
                         </td>
                         <td class="cart-six">
-                            <span class="m-0">¥59.00</span>
+                            <span class="m-0 my_price">¥59.00</span>
                         </td>
                         <td class="cart-seven">
-                            <a href="javascript:;" class="times d-block">&times;</a>
+                            <button class="times">&times;</button>
                         </td>
                     </tr>
                 </table>
             </div>
             <div class="cart-footer">
-                <div class="footer-left">
-                    <a href="javascript:;" class="checkbox mr-1 po-t"></a>
+                <div class="footer-left" >
+                    <a href="javascript:;" class="checkboxAll mr-1 po-t" id="chbAll"></a>
                     <span>全选</span>
                     <span>|</span>
                     <span>删除选中的商品</span>
@@ -116,9 +116,9 @@
                     <span class="d-block font-18">已选择1件商品</span>
                     <span class="d-block text-muted">已选择1件商品</span>
                 </div>
-                <div class="footer-right px-4 b-s-l">
+                <div class="footer-right pl-4 pr-2 b-s-l">
                     <span class="font-weight-bold">应付总额:</span>
-                    <span class="text-red">¥59.00</span>
+                    <span class="text-red" id="total">¥59.00</span>
                     <p class="mb-0 mt-1">应付总额不含运费</p>
                 </div>
                 <div class="footer-right">
@@ -202,5 +202,6 @@
         </div>
     </div>
 </div>
+<script src="js/cart.js"></script>
 </body>
 </html>
