@@ -21,7 +21,15 @@
                 <h4 class="m-0 font-20">购物清单</h4>
             </div>
         </div>
-        <div class="col-12 p-0 bg-white shopcart-F2">
+        <div class="col-12 p-0 bg-white shopcart-F2" id="shopcartF2">
+            <div class="col-12 p-0 empty" id="empty">
+                <div class="cart-img">
+                    <img class="mb-5" src="img/cart-empty.png" alt="">
+                    <h6 class="text-muted pb-2">您的购物车中还没有商品</h6>
+                    <a href="#" class="btn login-btn mr-1">登录</a>
+                    <a href="#" class="btn shop-btn ml-1">现在选购</a>
+                </div>
+            </div>
             <div class="d-flex text-center cart-title">
                 <span class="w-52 span-height span-first text-left pl-4">商品信息</span>
                 <span class="w-137 span-height">单价</span>
@@ -29,11 +37,14 @@
                 <span class="w-137 span-height">小计</span>
                 <span class="w-137 span-height">操作</span>
             </div>
-            <div class="cart-items">
+            <div>
+                
+                <div class="cart-items">
                 <table>
                     <tr>
                         <td class="cart-first">
                             <a href="javascript:;" class="checkbox"></a>
+                            <img class="w-25 check-img" src="img/checked.png" alt="">
                         </td>
                         <td class="cart-two"></td>
                         <td class="cart-three"></td>
@@ -45,20 +56,19 @@
                             <span class="px-3 line-h">1</span>
                             <button>+</button>
                         </td>
-                        <td class="cart-six">
-                            <span class="m-0 my_price">¥59.00</span>
-                        </td>
+                        <td class="cart-six m-0 my_price">¥59.00</td>
                         <td class="cart-seven">
-                            <button class="times">&times;</button>
+                            <button class="times">x</button>
                         </td>
                     </tr>
                 </table>
-            </div>
-            <div class="cart-items">
+                </div>
+                <div class="cart-items">
                 <table>
                     <tr>
                         <td class="cart-first">
                             <a href="javascript:;" class="checkbox"></a>
+                            <img class="w-25 check-img" src="img/checked.png" alt="">
                         </td>
                         <td class="cart-two"></td>
                         <td class="cart-three"></td>
@@ -70,20 +80,19 @@
                             <span class="px-3 line-h">1</span>
                             <button>+</button>
                         </td>
-                        <td class="cart-six">
-                            <span class="m-0 my_price">¥59.00</span>
-                        </td>
+                        <td class="cart-six m-0 my_price">¥59.00</td>
                         <td class="cart-seven">
-                            <button class="times">&times;</button>
+                            <button class="times">x</button>
                         </td>
                     </tr>
                 </table>
-            </div>
-            <div class="cart-items">
+                </div>
+                <div class="cart-items">
                 <table>
                     <tr>
                         <td class="cart-first">
                             <a href="javascript:;" class="checkbox"></a>
+                            <img class="w-25 check-img" src="img/checked.png" alt="">
                         </td>
                         <td class="cart-two"></td>
                         <td class="cart-three"></td>
@@ -95,21 +104,21 @@
                             <span class="px-3 line-h">1</span>
                             <button>+</button>
                         </td>
-                        <td class="cart-six">
-                            <span class="m-0 my_price">¥59.00</span>
-                        </td>
+                        <td class="cart-six m-0 my_price">¥59.00</td>
                         <td class="cart-seven">
-                            <button class="times">&times;</button>
+                            <button class="times">x</button>
                         </td>
                     </tr>
                 </table>
+                </div>
             </div>
             <div class="cart-footer">
                 <div class="footer-left" >
                     <a href="javascript:;" class="checkboxAll mr-1 po-t" id="chbAll"></a>
+                    <img class="checkAll-img" src="img/checked.png" alt="">
                     <span>全选</span>
                     <span>|</span>
-                    <span>删除选中的商品</span>
+                    <span id="deleteAll">删除选中的商品</span>
                 </div>
             <div class="cart-footer-right">
                 <div class="footer-right pr-4 text-right">
@@ -118,7 +127,7 @@
                 </div>
                 <div class="footer-right pl-4 pr-2 b-s-l">
                     <span class="font-weight-bold">应付总额:</span>
-                    <span class="text-red" id="total">¥59.00</span>
+                    <span class="text-red" id="total">¥0.00</span>
                     <p class="mb-0 mt-1">应付总额不含运费</p>
                 </div>
                 <div class="footer-right">

@@ -114,6 +114,10 @@ body{
     #F5 div{
         overflow: hidden;
     }
+    #banner{
+        transition: all 2s;
+    }
+    
     #shop-banner,
     #F2,
     #F3,
