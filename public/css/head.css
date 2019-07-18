@@ -55,14 +55,19 @@ div ul a{
 }
 #search{
     position: relative;
-    top:-120%;
-    left: 500%;
-    width:100% !important;
-    background-image:url("../img/search.png");
-    background-size:contain;
-    background-repeat: no-repeat;
-    padding-left: 45px !important;
-    background-position:4px 0;
+    top:-112px;
+    width: 35px;
+    left: 483%;
+    cursor: pointer;
+    z-index: 10021;
+}
+.search{
+    position: relative;
+    top:-75px;
+    left: 400%;
+    width: 300px !important;
+    padding-right: 55px;
+    background-position:180px;
     z-index: 10020;
 }
 .tab-pane li{
@@ -98,3 +103,10 @@ a:hover{
   .tab-content>.active{
       display:block;
   } */
+  a.nav-link:hover{
+    background-color: #eee;
+    color: #fff;
+}
+.tab-pane.open{
+    display: block !important;
+}

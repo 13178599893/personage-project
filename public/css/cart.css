@@ -126,6 +126,7 @@ body{
 .checkboxAll,
 .checkbox{
     display:inline-block;
+    position: relative;
     width:20px;
     height: 20px;
     border:2px solid #eee;
@@ -234,13 +235,21 @@ button{
     top: 5px;
 }
 .check-img{
+    cursor: pointer;
     position: absolute;
     top:4.5px;
     right: 27px;
     display: none;
 }
+.check-img.block{
+    display: block;
+}
+.checkAll-img.block{
+    display: block;
+}
 .checkAll-img{
     width: 1.2rem !important;
+    cursor: pointer;
     position: absolute;
     top:36px;
     right: 145px;
