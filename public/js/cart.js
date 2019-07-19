@@ -83,7 +83,7 @@ $deleteAll.click(function() {
     var $empty=$("#empty");
    $empty.removeClass("empty")
    } else{
-       console.log(1)
+    $empty.addClass("empty")
    }
     // console.log(cart_items)
   
