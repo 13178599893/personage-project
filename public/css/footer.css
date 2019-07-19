@@ -13,6 +13,9 @@ body{
 	padding-left: 380px;
     padding-right: 380px;
 }
+#footer>.min-width{
+	min-width:1138px ;
+}
 #footer li{
     margin:0 60px;
 }

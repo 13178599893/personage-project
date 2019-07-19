@@ -104,7 +104,7 @@ a:hover{
       display:block;
   } */
   a.nav-link:hover{
-    background-color: #eee;
+    background-color: rgb(60, 181, 211);
     color: #fff;
 }
 .tab-pane.open{

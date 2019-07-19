@@ -139,14 +139,14 @@ as[i].onmouseleave=function(){
   $('#nav-nav').on('mouseenter','[data-toggle="tab"]',function() {
     // console.log($(this).attr('data-index'))
     $index = parseInt($(this).attr('data-index'));
-    $(this).parent().parent().next().children().removeClass('active show').eq($index).addClass('active show').parent().mouseenter(function() {
-
+    $(this).parent().parent().next().children().removeClass('active show').eq($index).addClass('active show').parent()
+    .mouseenter(function() {
       $(this).children().eq($index).addClass('active show').siblings().removeClass('active show')
-    }).mouseleave(function() {
+    })
+    .mouseleave(function() {
       $(this).children().eq($index).removeClass('active show')
     })
   }).on('mouseleave','[data-toggle="tab"]',function() {
     $(this).parent().parent().next().children().eq($index).removeClass('active show');
   })
  
-
