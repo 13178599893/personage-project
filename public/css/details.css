@@ -8,51 +8,51 @@ body{
 	font-family:"Helvetica Neue","PingFang SC",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","\\5FAE\8F6F\96C5\9ED1",STHeiti,sans-serif;
 	font-size: 14px;
 }
-.details-top{
+.details-top.row{
 	background: #f0f0f0;
 	border-bottom: 1px solid #aaa;
 	box-shadow: 1px 1px 3px #aaa; 
 	padding-left: 380px;
     padding-right: 380px;
 }
-.details-top::before{
+.details-top.row::before{
 	content:"";
 	display: table;
 }
 .font-12{
 	font-size: 12px;
 }
-a:hover{
+.details-top.row ul.list-unstyled.d-flex a:hover{
 	font-weight:bolder;
 	text-decoration-color: #000;
 	text-decoration: none;
 }
-.F1-details-div{
+.container .F1-details-div{
 	margin-top: 50px;
 }
-.F1-details-div::before{
+.container .F1-details-div::before{
 	content: "";
 	display: table;
 }
-.details-circle::before{
+.details-F2 .details-circle::before{
 	content: "";
 	display: table;
 }
-.s1::before{
+.details-F2 .s1::before{
 	content: "";
 	display: table;
 }
-.s1{
+.details-F2 .s1{
 	width: 40px;
 	height: 40px;
 	background: #aaa;
 	border-radius: 50%;
 }
-.s2::before{
+.details-F2 .s2::before{
 	content: "";
 	display: table;
 }
-.s2{
+.details-F2 .s2{
 	width: 34px;
 	height: 34px;
 	background: #fff;
@@ -61,7 +61,7 @@ a:hover{
 	margin-left: 3px;
 	
 }
-.s3{
+.details-F2 .s3{
 	width: 30px;
 	height: 30px;
 	background: #000;
@@ -69,21 +69,21 @@ a:hover{
 	margin-top: 2px;
 	margin-left: 2px;
 }
-.s4::before{
+.details-F2 .s4::before{
 	content: "";
 	display: table;
 }
-.s4{
+.details-F2 .s4{
 	width: 40px;
 	height: 40px;
 	background: #aaa;
 	border-radius: 50%;
 }
-.s5::before{
+.details-F2 .s5::before{
 	content: "";
 	display: table;
 }
-.s5{
+.details-F2 .s5{
 	width: 34px;
 	height: 34px;
 	background: #fff;
@@ -92,7 +92,7 @@ a:hover{
 	margin-left: 3px;
 	
 }
-.s6{
+.details-F2 .s6{
 	width: 30px;
 	height: 30px;
 	background: #eee;
@@ -100,21 +100,21 @@ a:hover{
 	margin-top: 2px;
 	margin-left: 2px;
 }
-.s7::before{
+.details-F2 .s7::before{
 	content: "";
 	display: table;
 }
-.s7{
+.details-F2 .s7{
 	width: 40px;
 	height: 40px;
 	background: #aaa;
 	border-radius: 50%;
 }
-.s8::before{
+.details-F2 .s8::before{
 	content: "";
 	display: table;
 }
-.s8{
+.details-F2 .s8{
 	width: 34px;
 	height: 34px;
 	background: #fff;
@@ -123,7 +123,7 @@ a:hover{
 	margin-left: 3px;
 	
 }
-.s9{
+.details-F2 .s9{
 	width: 30px;
 	height: 30px;
 	background: #002299;
@@ -136,7 +136,7 @@ a:hover{
 	align-items: center;
 	border-bottom: 1px dashed #aaa;
 }
-.details-circle{
+.details-F2 .details-circle{
 	margin-top:30px; 
 	margin-bottom:30px; 
 }
@@ -158,25 +158,25 @@ a:hover{
 .my_font{
 	font-size: 25px;
 }
-.my_p_m p{
+ul.list-unstyled .my_p_m p{
 	margin-bottom: 0;
 }
-.my_p_m{
+ul.list-unstyled .my_p_m{
 	margin-right: 30px;
 }
-.my_p_m p:first-child{
+ul.list-unstyled .my_p_m p:first-child{
 	color:#000;
 	margin-bottom:10px;
 }
-.my_p_m p:nth-child(2),
-.my_p_m p:nth-child(3)
+.ul.list-unstyled .my_p_m p:nth-child(2),
+.ul.list-unstyled .my_p_m p:nth-child(3)
 {
 	color:#aaa;
 }
-.my_p_m p span{
+.ul.list-unstyled .my_p_m p span{
 	color: #222
 }
-.my_img_w{
+img.my_img_w{
 	width: 15%;
 }
 table th{
@@ -196,10 +196,7 @@ table td{
 .mr-20{
 	margin-right:20% !important;
 }
-.fixed{
-	position:fixed !important;
-	z-index: 10000 !important;
-}
+
 .ml-45{
 	margin-left: 45%;
 }
@@ -209,21 +206,21 @@ table td{
 .carousel-item img{
 	cursor: pointer;
 }
-.details-F4{
+.col-6.p-0 .details-F4{
 	padding-top: 35px;
 	padding-bottom: 35px;
 	border-bottom:1px dashed #aaa;
 }
-.details-F5{
+.col-6.p-0 .details-F5{
 	padding-top:35px;
 	padding-bottom:35px;
 	border-bottom:1px solid #ccc;
 }
-.details-F5 input{
+.col-6.p-0 .details-F5 input{
 	width: 10% !important;
 	cursor: text !important;
 }
-.details-F5 button{
+.col-6.p-0 .details-F5 button{
 	width: 2rem !important;
 	height: 2rem !important;
 	background: #fff;
@@ -231,10 +228,10 @@ table td{
 	cursor: pointer;
 
 }
-.details-F5 button:hover{
+.col-6.p-0 .details-F5 button:hover{
 	transform: scale(0.9)
 }
-.btn-outline-light{
+input.btn-outline-light{
 	background: none !important;
 	color:#000 !important;
 }

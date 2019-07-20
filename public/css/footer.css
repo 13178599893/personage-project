@@ -34,9 +34,9 @@ body{
 /* .m-b-20{
 	margin-bottom: 20px;
 } */
-ul li.mt-my{
+ul.list-unstyled.d-flex li.mt-my{
 	margin-top: 13px;
 }
-ul li.mt-my-1{
+ul.list-unstyled.d-flex li.mt-my-1{
 	margin-top: 15px;
 }

@@ -12,15 +12,15 @@ body{
         border-radius: 8px !important;
         box-shadow:0px 10px 15px #aaa;
     } 
-    .carousel-control-prev,
-    .carousel-control-next{
+    #banner .carousel-control-prev,
+    #banner .carousel-control-next{
         width: 30px;
         height: 30px;
         top:40%;
         background: #aaa;
         border-radius: 50%;
     }
-    .carousel-indicators li{
+    #banner ul.carousel-indicators li{
         width: 0.6rem;
         height: 0.6rem;
         border-radius: 50%;
@@ -28,31 +28,31 @@ body{
         margin-left: 6px;
         background: #aaa;
     }
-    .carousel-indicators .active{
+    #banner ul.carousel-indicators .active{
         background:rgb(13, 136, 252);
     }
-    
+    /*楼层row*/
     .title-div{
         background: #eee;
         border:0px solid #ccc;
         border-top-left-radius: 10px;
     }
-    .b-t-r-r{
+    .title-div.b-t-r-r{
         border-top-right-radius: 10px;
     }
-    .shop-banner-ico-prev{
+    .title-div .carousel-control-prev.shop-banner-ico-prev{
         top:20px;
         left:60px;
         width: 1.5rem;
         height: 1.5rem;
     }
-    .shop-banner-ico-next{
+    .title-div .carousel-control-next.shop-banner-ico-next{
         top:20px;
         right:60px;
         width: 1.5rem;
         height: 1.5rem;
     }
-    .shop-banner-ico-span{
+    .carousel-control-next-icon.shop-banner-ico-span{
         width: 1rem;
         height: 1rem;
     }
@@ -79,13 +79,13 @@ body{
     .btn-gray{
         background: #ccc;
     }
-    .F6-div{
+    #F6 .F6-div{
         margin-top: 10px;
         height: 50%;
     }
-    img{
+    /* img{
         transition:transform 1s linear;
-    }
+    } */
     
     #F2 .col-3.p-0,
     #F3 .col-3.p-0,
@@ -100,7 +100,7 @@ body{
     #F5 .col-3.p-0:hover,
     #shop-banner .col-3.p-0:hover{
         box-shadow:-8px -8px 15px  #ddd inset,8px 8px 15px  #ddd inset;
-        transition: all 0.2s;
+        transition: all 0.3s;
         /* -webkit-animation-duration: 1s;
         animation-duration: 1s;
         -webkit-animation-name: rubberBand;
