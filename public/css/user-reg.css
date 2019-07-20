@@ -27,7 +27,7 @@ a .ico{
 	border:1px solid #fff;
 	background-color:#a4c3be;
 	background-image:linear-gradient(to bottom,#666 0%,#aaa 25%,#ddd 100%);
-	width:500px;
+	width:600px;
 /*	height:550px;*/
 	position: absolute;
 	left:35%;
@@ -44,7 +44,7 @@ button{
 	position: relative;
 	top:20px;
 	left:15px;
-	margin-top:20px;
+	margin-top:10px;
 	border-radius:10px ;
 	outline:none;
 }
@@ -60,6 +60,7 @@ button{
 	position: relative;
 	top:20px;
 	margin-top:20px;
+	margin-bottom:20px;
 	width:400px;
 	height:45px;
 	border-radius:10px;
@@ -130,39 +131,15 @@ hr{
 	position: relative;
 	top:-15px;
 }
-span{
-	font-size:1px;
-}
-/*.input.int1{*/
-/*	background-image: url("../ico/uname.ico");*/
-/*	background-repeat:no-repeat;*/
-/*	background-size:contain ;*/
-/*	background-position:right;*/
-/*}*/
-/*.input.int2{*/
-/*	background-image: url("../ico/phone.ico");*/
-/*	background-repeat:no-repeat;*/
-/*	background-size:contain ;*/
-/*	background-position:right;*/
-/*}*/
-/*.input.int3{*/
-/*	background-image: url("../ico/email.ico");*/
-/*	background-repeat:no-repeat;*/
-/*	background-size:contain ;*/
-/*	background-position:right;*/
-/*}*/
-/*.input.int4{*/
-/*	background-image: url("../ico/upwd.ico");*/
-/*	background-repeat:no-repeat;*/
-/*	background-size:contain ;*/
-/*	background-position:right;*/
-/*}*/
-/*.input.int5{*/
-/*	background-image: url("../ico/upwd.ico");*/
-/*	background-repeat:no-repeat;*/
-/*	background-size:contain ;*/
-/*	background-position:right;*/
-/*}*/
 a{
 	text-decoration:none;
+}
+span.msg{
+	display: block;
+	position: absolute;
+
+	z-index: 100;
+}
+.position-relative span img{
+	width: 25px;
 }

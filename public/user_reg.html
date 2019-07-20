@@ -4,6 +4,11 @@
 	<meta charset="UTF-8">
 	<title>注册</title>
 	<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/bootstrap.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/user-reg.css">
 	<style>
 		
@@ -23,37 +28,40 @@
 					</div>
 				</li>
 				<li>				
-					<div><!-- 	第一个文本框	 -->
+					<div class="position-relative"><!-- 	第一个文本框	 -->
 						<img src="./ico/uname.ico" alt="" class="ico">
-						<input type="text" id="uname"  placeholder="用户名" class="input int1" >
+						<input type="text" id="uname"  placeholder="用户名长度为6~8位" class="input int1" >
+						<span class="msg"></span>
 					</div>
 				</li>
 				<li>
-					<div><!-- 	第二个文本框	 -->
+					<div class="position-relative"><!-- 	第二个文本框	 -->
 						<img src="./ico/phone.ico" alt="" class="ico ico-phone">
 						<input type="text" id="phone"  placeholder="手机号" class="input int2">	
-<!-- 						<span id="msg1"></span> -->
+ 						<span class="msg"></span>
 					</div>
 				</li>
 				<li>
-					<div><!-- 	第三个文本框	 -->
+					<div class="position-relative"><!-- 	第三个文本框	 -->
 						<img src="./ico/email.ico" alt="" class="ico">
 						<input type="text" id="email" placeholder="邮箱" class="input int3">
+						<span class="msg"></span>
 					</div>
 				</li>
 				<li>
-					<div><!-- 	第四个文本框	 -->
+					<div class="position-relative"><!-- 	第四个文本框	 -->
 						<img src="./ico/upwd.ico"  alt="" class="ico">
-						<input type="password" id="upwd" placeholder="密码" class="input int4">
+						<input type="password" id="upwd" placeholder="密码至少包含一个大写字母和一位数字,长度为6~12" class="input int4">
+						<span class="msg"></span>
 					</div>
 				</li>
 				<li>
-					<div><!-- 	第五个文本框	 -->
+					<div class="position-relative"><!-- 	第五个文本框	 -->
 						<img src="./ico/upwd.ico"  alt="" class="ico">
 						<input type="password" id="uupwd" placeholder="确认密码" class="input int5">
+						<span class="msg"></span>
 					</div>
 				</li>
-				
 				<li>
 					<div class="div-box"><!-- 	多选按钮	 -->
 						<input type="checkbox" id="box" value="1">
@@ -67,7 +75,7 @@
 				</li>
 				<li>
 					<div><!-- 	提交按钮	 -->
-						<button onclick="reg_show()">注册</button>
+						<button>注册</button>
 					</div>
 				</li>
 				<li>
@@ -96,7 +104,6 @@
 			</ul>
 		</div>
 	</div>
-	<script src="./js/function.js"></script>
-
+	<script src="js/login_reg.js"></script>
 </body>
 </html>
