@@ -154,11 +154,11 @@ as[i].onmouseleave=function(){
 //鼠标滚轮
   var div=document.getElementById("top-nav");
  var style=getComputedStyle(div);
-console.log(style)
- console.log(div);
+// console.log(style)
+//  console.log(div);
 window.onscroll=function(){
     var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
-    console.log(scrollTop)
+    // console.log(scrollTop)
     if(scrollTop>=250){
         div.style.position="fixed";
         div.style.top="0px";
