@@ -1,3 +1,5 @@
+$(function(){
+
 let div = document.getElementById("shop-cart");
 console.log(div);
 div.onclick = function(e) {
@@ -134,6 +136,7 @@ $("#chball-parent").on("click", ".checkboxAll,.checkAll-img", function() {
     $chbs.next().removeClass("block");
     let $total = $("#total");
     $total.html(`¥${0}.00`);
+    $n=0;
 }
 $(".shopsum").html(`已选择${$n}件商品`);
 $(".shopsun").html(`已选择${$n}件商品`);
@@ -192,3 +195,11 @@ $("#chbs").on("click", ".checkbox,.check-img", function() {
 //     $checkboxAll.prop("disable","false")
 //     console.log($checkboxAll.attr())
 // }
+
+
+
+
+
+
+//不可删
+})

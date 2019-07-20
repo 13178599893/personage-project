@@ -1,3 +1,5 @@
+$(function(){
+
 var div=document.getElementById("joinCartFixed");
 var style=getComputedStyle(div);
 var onscroll=function(){
@@ -5,7 +7,7 @@ var onscroll=function(){
     console.log(scrollHeigh)
     var scrollTop=document.documentElement.scrollTop||document.body.scrollTop;
     // console.log(scrollTop)
-    var fixedHeight=scrollHeigh-1200
+    var fixedHeight=scrollHeigh-1300
     console.log(fixedHeight)
     if(scrollTop<=fixedHeight){
         div.style.position="fixed";
@@ -15,3 +17,10 @@ var onscroll=function(){
     }
 }
 window.addEventListener("scroll",onscroll);
+
+
+
+
+
+//不可删
+})

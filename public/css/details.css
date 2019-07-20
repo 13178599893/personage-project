@@ -248,8 +248,8 @@ table td{
 .bg-F1,
 .bg-F2
 {
-	border-bottom-right-radius: 8px;
-	border-bottom-left-radius: 8px;
+	/* border-bottom-right-radius: 8px; */
+	border-radius: 8px;
 	box-shadow: 0px 10px 15px #aaa;
 }
 .ml-19{
