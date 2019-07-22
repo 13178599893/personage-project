@@ -8,7 +8,75 @@ body{
 	font-family: "Helvetica Neue","PingFang SC",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","\\5FAE\8F6F\96C5\9ED1",STHeiti,sans-serif;
 	font-size: 14px;
 }
-    #banner .carousel-inner{
+#mains{
+    width: 1100px;
+    margin:0 auto;
+}
+#banner{
+    width: 1100px;
+    overflow: hidden;
+    position: relative;
+}
+#ul-imgs{
+    width: 4400px;
+   list-style: none;
+}
+#ul-imgs.transition{
+    transition:all .5s linear;
+}
+#ul-imgs>li{
+    width: 1100px;
+    float: left;
+}
+#ul-imgs img{
+    width: 1100px;
+}
+#ul-indxs{
+    width: 100px;
+    margin: 0 auto;
+    list-style: none;
+    position: absolute;
+    bottom:35px;
+    left: 50%;
+    margin-left:-50px; 
+}
+#ul-indxs>li{
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+#ul-indxs>li.active{
+    background: blue;
+}
+#btn-left,
+#btn-right{
+    width: 60px;
+    height: 100px;
+    position: absolute;
+    top:50%;
+    margin-top: -50px;
+    background-repeat: no-repeat;
+    background-position:center;
+    cursor: pointer;
+}
+#btn-left{
+    left:20px;
+    background-image: url("../img/left_ar.png");
+}
+#btn-right{
+    right: 20px;
+    background-image: url("../img/right_ar.png");
+}
+#btn-left:hover,#btn-right:hover{
+    background-size: 40px 70px;
+}
+
+
+    /* #banner .carousel-inner{
         border-radius: 8px !important;
         box-shadow:0px 10px 15px #aaa;
     } 
@@ -30,7 +98,7 @@ body{
     }
     #banner ul.carousel-indicators .active{
         background:rgb(13, 136, 252);
-    }
+    } */
     /*楼层row*/
     .title-div{
         background: #eee;
@@ -135,3 +203,21 @@ body{
         display: block;
     }
    
+    #top{
+        position: absolute;
+        text-align: center;
+        right:260px; 
+ 
+        cursor: pointer;
+        background: #e1e1e1;
+        border: 1px solid #aaa;
+        border-radius: 8px;
+        bottom: 290px;
+        
+        
+    }
+    #top>img{
+        width: 40px;
+        cursor: pointer;
+        margin: 0;
+    }

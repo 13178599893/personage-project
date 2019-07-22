@@ -20,6 +20,24 @@
 <header id="header_ajax"></header>
 <div class="container">
     <!-- 轮播图 -->
+        <div id="mains">
+            <div id="banner" class="mt-4">
+                <div id="btn-left"></div>
+                <ul id="ul-imgs">
+                    <li><a href="javacript:;"><img src="img/banner1.jpg" alt=""></a></li>
+                    <li><a href="javacript:;"><img src="img/banner2.jpg" alt=""></a></li>
+                    <li><a href="javacript:;"><img src="img/banner3.jpg" alt=""></a></li>
+                    <li><a href="javacript:;"><img src="img/banner1.jpg" alt=""></a></li>
+                </ul>
+                <ul id="ul-indxs">
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div id="btn-right"></div>
+            </div>
+        </div>
+        <!--
     <div class="carousel mt-4" id="banner" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -37,26 +55,23 @@
                     <img src="img/banner3.jpg" class="w-100" alt="图片丢失" >
                 </a>
             </div>
-            <!-- <div class="carousel-item">
-                <a href="javascript:;">
-                    <img src="img/banner4.jpg" class="w-100" alt="图片丢失" >
-                </a>
-            </div> -->
-        </div>
+        </div>-->
         <!-- 轮播图切换按钮 -->
+        <!--
         <a href="#banner" data-slide="prev" class="carousel-control-prev ml-4">
             <span class="carousel-control-prev-icon"></span>
         </a>
         <a href="#banner" data-slide="next" class="carousel-control-next mr-4">
             <span class="carousel-control-next-icon"></span>
-        </a>
+        </a>-->
         <!-- 轮播图下方圆圆 -->
+        <!--
         <ul class="carousel-indicators mb-0">
             <li data-target="#banner" data-slide-to="0" class="active"></li>
             <li data-target="#banner" data-slide-to="1"></li>
             <li data-target="#banner" data-slide-to="2"></li>
         </ul>
-    </div>
+    </div>-->
     <!-- 1L商品轮播图 -->
     <div class="row title-div b-t-r-r m-0 mt-4 carousel border-0" id="shop-banner" data-ride="carousel">
         <div class="col-10 p-0 ">
@@ -502,8 +517,13 @@
             </div>
         </div>
 </div>
+<div id="top">
+    <p class="m-0">top</p> 
+    <img src="img/top.png" alt="" >
+</div>
 <footer id="footer_ajax"></footer>
 <script id="script_js"></script>
+<script src="js/index.js"></script>
 <script src="js/header_ajax.js"></script>
 <script src="js/footer_ajax.js"></script>
 </body>
