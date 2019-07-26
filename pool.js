@@ -1,12 +1,15 @@
-const mysql=require("mysql");
-//创建连接池对象
-var pool=mysql.createPool({
- host:"127.0.0.1",
- port:"3306",
- user:"root",
- password:"",
- database:"hammer",
- connectionLimit:20
+//创建mysql连接池
+const mysql = require('mysql');
+var pool = mysql.createPool({
+  host: '127.0.0.1',
+  user: 'root',
+  password: '',
+  database: 'hammer',
+  connectionLimit: 10 
 });
- //导出连接池对象
- module.exports=pool;
+//把创建好的连接池导出
+module.exports = pool;
+
+
+
+
