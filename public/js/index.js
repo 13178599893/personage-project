@@ -1,8 +1,65 @@
+
 $(function(){
+    axios.get(
+        "http://localhost:5050/index"
+    ).then(result=>{
+        console.log(result.data)
+        new Vue({
+            el:"#app",
+            data:{
+                arr1:result.data.slice(0,3),//一楼前3个商品数据
+                p4:result.data.slice(3,4)[0],//一楼第四个商品数据
+                arr2:result.data.slice(4,8),//一楼轮播第二页4个商品数据
+                p5:result.data.slice(8,9)[0],//二楼第一个图片
+                arr3:result.data.slice(9,11),//二楼第一排两个商品数据
+                arr4:result.data.slice(11,15),//二楼第二排4个商品数据
+                p6:result.data.slice(15,16)[0],//三楼第一个图片
+                arr5:result.data.slice(16,18),//三楼两个商品数据
+                p7:result.data.slice(18,19)[0],//四楼第一个图片
+                arr6:result.data.slice(19,25),//四楼剩余5个商品数据
+                p8:result.data.slice(25,26)[0],//五楼第一个图片
+                arr7:result.data.slice(26,32)//五楼剩余5个商品数据
+            },  
+            methods:{
+         
+            }
+        })
+   
+    })
+
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     //轮播图
     var i=0;
     var LIWIDTH=1100;
-    var DURATION=2000;
+    var DURATION=500;
     var LICOUNT=3;
     var ulImgs=document.getElementById("ul-imgs");
     var ulIdxs=document.getElementById("ul-indxs");

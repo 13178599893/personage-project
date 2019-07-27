@@ -12,12 +12,18 @@
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+
 <link rel="stylesheet" href="css/index.css">
+
 <style>
+    [v-cloak]{
+        display: none !important;
+    }
 </style>
 </head>
 <body>
 <header id="header_ajax"></header>
+<div id="app">
 <div class="container">
     <!-- 轮播图 -->
         <div id="mains">
@@ -95,18 +101,18 @@
          </div>
          <!-- 1L商品列表 -->
          <div class="row m-0 carousel-inner bg-white text-center" id="shop-banner-div">
-             <div class="col-12 clearfix p-0 carousel-item active">
-                <div class="col-3 p-0 float-left">
+             <div class="col-12 clearfix p-0 carousel-item active" v-cloak>
+                <div class="col-3 p-0 float-left" v-for="(p,i) of arr1" :key="i">
                     <div class="m-0 p-0">
-                        <a href="details2.html">
-                            <img  src="img/plimsollsshop.webp" alt="图片丢失">
-                            <p class="m-0 text-black">Smartisan 帆布鞋</p>
-                            <p class="m-0 text-muted mt-3">一双踏实、舒适的帆布鞋</p>
-                            <span class="F1-price d-block my-3">¥199.00</span>
+                        <a :href="p.href">
+                            <img  :src="p.pic" alt="图片丢失">
+                            <p class="m-0 text-black">{{p.title}}</p>
+                            <p class="m-0 text-muted mt-3">{{p.details}}</p>
+                            <span class="F1-price d-block my-3">¥{{p.price.toFixed(2)}}</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-3 p-0 float-left">
+                <!-- <div class="col-3 p-0 float-left">
                     <div class="m-0 p-0">
                         <a href="javascript:;">
                             <img class="jackInTheBox" src="img/portableF1.webp" alt="图片丢失">
@@ -125,31 +131,31 @@
                             <span class="F1-price d-block my-3">¥499.00</span>
                         </a>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-3 p-0 float-left">
                     <div class="m-0 p-0">
-                        <a href="javascript:;">
-                            <img  src="img/Tshit.webp" alt="图片丢失">
-                            <p class="m-0 text-black">Smartisan T恤 皇帝的新装</p>
+                        <a :href="p4.href">
+                            <img  :src="p4.pic" alt="图片丢失">
+                            <p class="m-0 text-black">{{p4.title}}</p>
                             <p class="m-0 text-muted mt-3">&nbsp;</p>
-                            <span class="F1-price d-block my-3">¥149.00</span>
+                            <span class="F1-price d-block my-3">¥{{p4.price.toFixed(2)}}</span>
                         </a>
                     </div>
                 </div>
              </div>
              <!-- 轮播图第二页 -->
              <div class="col-12  p-0 carousel-item">
-                <div class="col-3 p-0 float-left rounded-l-bottom">
+                <div class="col-3 p-0 float-left rounded-l-bottom" v-for="(p,i) of arr2" :key="i">
                     <div class="m-0 p-0">
-                        <a href="javascript:;">
-                            <img  src="img/FMboxF1.webp" alt="图片丢失">
-                            <p class="m-0 text-black">坚果砖式蓝牙小音箱</p>
-                            <p class="m-0 text-muted mt-3">一款设计出色、音质出众的随身音箱</p>
-                            <span class="F1-price d-block my-3">¥149.00</span>
+                        <a :href="p.href">
+                            <img  :src="p.pic" alt="图片丢失">
+                            <p class="m-0 text-black">{{p.title}}</p>
+                            <p class="m-0 text-muted mt-3">{{p.details}}</p>
+                            <span class="F1-price d-block my-3">¥{{p.price.toFixed(2)}}</span>
                         </a>
                     </div>
                 </div>
-                <div class="col-3 p-0 float-left">
+                <!-- <div class="col-3 p-0 float-left">
                     <div class="m-0 p-0">
                         <a href="javascript:;">
                             <img  src="img/headsetF1.webp" alt="图片丢失">
@@ -178,7 +184,7 @@
                             <span class="F1-price d-block my-3">¥79.00</span>
                         </a>
                     </div>
-                </div>
+                </div> -->
              </div>
          </div>
         </div>
@@ -190,23 +196,23 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 bg-white text-center" id="F2">
+        <div class="row m-0 bg-white text-center" id="F2" v-cloak>
             <div class="col-6 p-0 bg-dark">
                 <a href="#">
-                    <img class="w-100" src="img/F2img.jpg" alt="图片丢失" id="F2_img">
+                    <img class="w-100" :src="p5.pic" alt="图片丢失" id="F2_img">
                 </a>
             </div>
-            <div class="col-3 p-0">
+            <div class="col-3 p-0" v-for="(p,i) of arr3" :key="i">
                 <div class="m-0 p-0">
-                    <a href="javascript:;">
-                        <img  class="mt-4 mb-2" src="img/luggageF2.webp" alt="图片丢失">
-                        <p class="m-0 text-black">地平线 8 号 28 寸旅行箱</p>
-                        <p class="m-0 text-muted mt-3">一款让旅行箱挑剔者满意的旅行箱</p>
-                        <span class="F1-price d-block my-3">¥599.00</span>
+                    <a :href="p.href">
+                        <img  class="mt-4 mb-2" :src="p.pic" alt="图片丢失">
+                        <p class="m-0 text-black">{{p.title}}</p>
+                        <p class="m-0 text-muted mt-3">{{p.details}}</p>
+                        <span class="F1-price d-block my-3">¥{{p.price.toFixed(2)}}</span>
                     </a>
                 </div>
             </div>
-            <div class="col-3 p-0">
+            <!-- <div class="col-3 p-0">
                 <div class="m-0 p-0">
                     <a href="javascript:;">
                         <img  class="mt-4 mb-2" src="img/schoolbagF2.webp" alt="图片丢失">
@@ -215,18 +221,18 @@
                         <span class="F1-price d-block my-3">¥69.00</span>
                     </a>
                 </div>
-            </div>
-            <div class="col-3 p-0">
+            </div> -->
+            <div class="col-3 p-0" v-for="(p,i) of arr4">
                 <div class="m-0 p-0">
-                    <a href="javascript:;">
-                        <img  src="img/T1F2.webp" alt="图片丢失">
-                        <p class="m-0 text-black">Smartisan T恤 经典款</p>
+                    <a :href="p.href">
+                        <img  :src="p.pic" alt="图片丢失">
+                        <p class="m-0 text-black">{{p.title}}</p>
                         <p class="m-0 text-muted mt-3">&nbsp;</p>
-                        <span class="F1-price d-block my-3">¥149.00</span>
+                        <span class="F1-price d-block my-3">¥{{p.price.toFixed(2)}}</span>
                     </a>
                 </div>
             </div>
-            <div class="col-3 p-0">
+            <!-- <div class="col-3 p-0">
                 <div class="m-0 p-0">
                     <a href="javascript:;">
                         <img  src="img/T2F2.webp" alt="图片丢失">
@@ -255,7 +261,7 @@
                         <span class="F1-price d-block my-3">¥149.00</span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- 3F商品列表 -->
         <div class="row m-0 title-div b-t-r-r mt-4 border-0">
@@ -267,21 +273,21 @@
         </div>
         <div class="row title-div m-0 bg-white text-center" id="F3">
             <div class="col-6 p-0 bg-dark">
-                <a href="#">
-                    <img class="w-100" src="img/IMGf3.jpg" alt="图片丢失" id="F3_img">
+                <a href="javascript:;">
+                    <img class="w-100" :src="p6.pic" alt="图片丢失" id="F3_img">
                 </a>
             </div>
-            <div class="col-3 p-0">
+            <div class="col-3 p-0" v-for="(p,i) of arr5" :key="i">
                 <div class="m-0 p-0">
-                    <a href="javascript:;">
-                        <img class="mt-4 mb-2" src="img/purifierF3.webp" alt="图片丢失">
-                        <p class="m-0 text-black">畅呼吸智能空气净化器 · 超级除甲醛版</p>
-                        <p class="m-0 text-muted mt-3">超强除甲醛能力，超低噪音，智能操控</p>
-                        <span class="F1-price d-block my-3">¥2999.00</span>
+                    <a :href="p.href">
+                        <img class="mt-4 mb-2" :src="p.pic" alt="图片丢失">
+                        <p class="m-0 text-black">{{p.title}}</p>
+                        <p class="m-0 text-muted mt-3">{{p.details}}</p>
+                        <span class="F1-price d-block my-3">¥{{p.price.toFixed(2)}}</span>
                     </a>
                 </div>
             </div>
-            <div class="col-3 p-0">
+            <!-- <div class="col-3 p-0">
                 <div class="m-0 p-0">
                     <a href="javascript:;">
                         <img class="mt-4 mb-2" src="img/breatheF3.webp" alt="图片丢失">
@@ -290,7 +296,7 @@
                         <span class="F1-price d-block my-3">¥699.00</span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- 4F商品列表 -->
         <div class="row m-0 title-div b-t-r-r mt-4 border-0">
@@ -303,20 +309,20 @@
         <div class="row m-0 bg-white text-center" id="F4">
             <div class="col-6 p-0 bg-dark">
                 <a href="javascript:;">
-                    <img class="w-100" src="img/IMGF4.jpg" alt="图片丢失" id="F4_img">
+                    <img class="w-100" :src="p7.pic" alt="图片丢失" id="F4_img">
                 </a>
             </div>
-            <div class="col-3 p-0">
+            <div class="col-3 p-0" v-for="(p,i) of arr6" :key="i">
                 <div class="m-0 p-0">
-                    <a href="javascript:;">
-                        <img class="mt-4 mb-2" src="img/headsetfirst.webp" alt="图片丢失">
-                        <p class="m-0 text-black">Smartisan 耳机转接头</p>
-                        <p class="m-0 text-muted mt-3">别即插即用、全面兼容</p>
-                        <span class="F1-price d-block my-3">¥19.00</span>
+                    <a :href="p.href">
+                        <img class="mt-4 mb-2" :src="p.pic" alt="图片丢失">
+                        <p class="m-0 text-black">{{p.title}}</p>
+                        <p class="m-0 text-muted mt-3">{{p.details}}</p>
+                        <span class="F1-price d-block my-3">¥{{p.price.toFixed(2)}}</span>
                     </a>
                 </div>
             </div>
-            <div class="col-3 p-0">
+            <!-- <div class="col-3 p-0">
                 <div class="m-0 p-0">
                     <a href="javascript:;">
                         <img class="mt-4 mb-2" src="img/carchargerF4.webp" alt="图片丢失">
@@ -365,7 +371,7 @@
                         <span class="F1-price d-block my-3">¥149.00</span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- 5F商品列表 -->
         <div class="row m-0 title-div b-t-r-r mt-4 border-0">
@@ -375,23 +381,23 @@
                 </div>
             </div>
         </div>
-        <div class="row  m-0 bg-white text-center" id="F5">
+        <div class="row  m-0 bg-white text-center" id="F5" v-cloak>
             <div class="col-6 p-0 bg-dark">
                 <a href="javascript:;">
-                    <img class="w-100" src="img/IMGF5.jpg" alt="图片丢失" id="F5_img">
+                    <img class="w-100" :src="p8.pic" alt="图片丢失" id="F5_img">
                 </a>
             </div>
-            <div class="col-3 p-0">
+            <div class="col-3 p-0" v-for="(p,i) of arr7" :key="i">
                 <div class="m-0 p-0">
-                    <a href="javascript:;">
-                        <img class="mt-4 mb-2" src="img/P1F5.webp" alt="图片丢失">
-                        <p class="m-0 text-black">坚果 Pro 2S</p>
-                        <p class="m-0 text-muted mt-3">双系统，无限屏</p>
-                        <span class="F1-price d-block my-3">¥1998.00</span>
+                    <a :href="p.href">
+                        <img class="mt-4 mb-2" :src="p.pic" alt="图片丢失">
+                        <p class="m-0 text-black">{{p.title}}</p>
+                        <p class="m-0 text-muted mt-3">{{p.details}}</p>
+                        <span class="F1-price d-block my-3">¥{{p.price.toFixed(2)}}</span>
                     </a>
                 </div>
             </div>
-            <div class="col-3 p-0">
+            <!-- <div class="col-3 p-0">
                 <div class="m-0 p-0">
                     <a href="javascript:;">
                         <img class="mt-4 mb-2" src="img/P2F5.webp" alt="图片丢失">
@@ -440,7 +446,7 @@
                         <span class="F1-price d-block my-3">¥59.00</span>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
         <!-- 6F论坛列表 -->
         <div class="row m-0 title-div b-t-r-r mt-4 border-0 ">
@@ -521,10 +527,13 @@
     <p class="m-0">top</p> 
     <img src="img/top.png" alt="" >
 </div>
+</div>
 <footer id="footer_ajax"></footer>
 <script id="script_js"></script>
-<script src="js/index.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/axios.min.js"></script>
 <script src="js/header_ajax.js"></script>
+<script src="js/index.js"></script>
 <script src="js/footer_ajax.js"></script>
 </body>
 </html>

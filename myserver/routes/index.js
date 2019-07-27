@@ -4,7 +4,6 @@ const pool=require("../pool");
 
 router.get("/",(req,res)=>{
 	var sql=`SELECT * FROM hammer_index_product`
-//		var sql2=`SELECT * FROM hammer_index_F6`
 		pool.query(sql,[],(err,result)=>{
 			if(err){
 				res.send(err);
@@ -12,8 +11,7 @@ router.get("/",(req,res)=>{
 			}else{
 				res.send(result);
 			}
-			
 	})
-		
 })
+
 module.exports=router;

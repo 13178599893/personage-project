@@ -50,7 +50,7 @@ body{
     cursor: pointer;
 }
 #ul-indxs>li.active{
-    background: blue;
+    background: rgb(13, 137, 253);
 }
 #btn-left,
 #btn-right{

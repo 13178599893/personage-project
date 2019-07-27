@@ -71,6 +71,7 @@ div.navbar .navbar-brand img{
     z-index: 10020;
 }
 #top-nav .tab-content .tab-pane li{
+    width: 100px;
     margin: 5% 5%;
 }
 #top-nav .tab-content{
