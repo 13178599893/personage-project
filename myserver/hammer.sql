@@ -65,8 +65,11 @@ INSERT INTO hammer_index_product VALUES
 (NULL,'坚果彩虹数据线','七彩随机发货，为生活增添一份小小惊喜','img/dataLineF4.webp','39','details1.html?lid=28','5'),
 (NULL,'坚果“电池形电池”移动电源','别具一格的“全能型”移动电源','img/portableF4.webp','69','details1.html?lid=29','5'),
 (NULL,'坚果砖式蓝牙小音箱','一款设计出色、音质出众的随身音箱','img/BoxF4.webp','149','details1.html?lid=30','5'),
-(NULL,'Smartisan 半入耳式耳机','经典配色、专业调音、高品质麦克风','img/headsetF4.webp','59','details1.html?lid=31','5');
-
+(NULL,'Smartisan 半入耳式耳机','经典配色、专业调音、高品质麦克风','img/headsetF4.webp','59','details1.html?lid=31','5'),
+(NULL,'[开箱] 坚果 Pro 2S 内敛骚蓝惊艳炫光...','内敛骚蓝，惊艳炫光','img/IMGF6.webp','','','6'),
+(NULL,'[开箱] 坚果 Pro 2S 惊艳开箱...','全新的炫光蓝及炫光红色相当惊艳','img/IMGF6.webp','','','6'),
+(NULL,'[开箱] 纯白色坚果 Pro2 图赏...','有美如斯，冰清玉洁','img/IMG3F6.webp','','','6'),
+(NULL,'[合辑] 八月优秀摄影作品欣赏...','8 月的优秀作品如期而至','img/IMG4F6.webp','','','6');
 
 /*****首页6F论坛数据*****/
 CREATE TABLE hammer_index_F6 (
@@ -77,11 +80,8 @@ CREATE TABLE hammer_index_F6 (
 );
 
 /*******插入首页6F数据************/
-INSERT INTO hammer_index_F6 VALUES
-(NULL,'[开箱] 坚果 Pro 2S 内敛骚蓝惊艳炫光...','内敛骚蓝，惊艳炫光','img/IMGF6.webp'),
-(NULL,'[开箱] 坚果 Pro 2S 惊艳开箱...','全新的炫光蓝及炫光红色相当惊艳','img/IMGF6.webp'),
-(NULL,'[开箱] 纯白色坚果 Pro2 图赏...','有美如斯，冰清玉洁','img/IMG3F6.webp'),
-(NULL,'[合辑] 八月优秀摄影作品欣赏...','8 月的优秀作品如期而至','img/IMG4F6.webp');
+/**INSERT INTO hammer_index_F6 VALUES**/
+
 
 
 
