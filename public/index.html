@@ -13,6 +13,7 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
+
 <link rel="stylesheet" href="css/index.css">
 
 <style>
@@ -79,7 +80,7 @@
         </ul>
     </div>-->
     <!-- 1L商品轮播图 -->
-    <div class="row title-div b-t-r-r m-0 mt-4 carousel border-0" id="shop-banner" data-ride="carousel">
+    <div class="row title-div b-t-r-r m-0 mt-4 carousel border-0" id="shop-banner" data-ride="carousel" v-cloak>
         <div class="col-10 p-0 ">
             <div class=" py-3 pl-4">
                 <h4 class="m-0 ">热门商品</h4>
@@ -100,7 +101,7 @@
              </div>
          </div>
          <!-- 1L商品列表 -->
-         <div class="row m-0 carousel-inner bg-white text-center" id="shop-banner-div">
+         <div class="row m-0 carousel-inner bg-white text-center" id="shop-banner-div" v-cloak>
              <div class="col-12 clearfix p-0 carousel-item active" v-cloak>
                 <div class="col-3 p-0 float-left" v-for="(p,i) of arr1" :key="i">
                     <div class="m-0 p-0">
@@ -144,7 +145,7 @@
                 </div>
              </div>
              <!-- 轮播图第二页 -->
-             <div class="col-12  p-0 carousel-item">
+             <div class="col-12  p-0 carousel-item" v-cloak>
                 <div class="col-3 p-0 float-left rounded-l-bottom" v-for="(p,i) of arr2" :key="i">
                     <div class="m-0 p-0">
                         <a :href="p.href">
@@ -189,7 +190,7 @@
          </div>
         </div>
         <!-- 2F商品列表 -->
-        <div class="row m-0 title-div b-t-r-r mt-4 border-0">
+        <div class="row m-0 title-div b-t-r-r mt-4 border-0" v-cloak>
             <div class="col-12 p-0 ">
                 <div class="py-3 pl-4">
                     <h4 class="m-0">服饰箱包</h4>
@@ -222,7 +223,7 @@
                     </a>
                 </div>
             </div> -->
-            <div class="col-3 p-0" v-for="(p,i) of arr4">
+            <div class="col-3 p-0" v-for="(p,i) of arr4 " v-cloak>
                 <div class="m-0 p-0">
                     <a :href="p.href">
                         <img  :src="p.pic" alt="图片丢失">
@@ -264,20 +265,20 @@
             </div> -->
         </div>
         <!-- 3F商品列表 -->
-        <div class="row m-0 title-div b-t-r-r mt-4 border-0">
+        <div class="row m-0 title-div b-t-r-r mt-4 border-0" v-cloak>
             <div class="col-12 p-0 ">
                 <div class="py-3 pl-4">
                     <h4 class="m-0">畅呼吸系列产品</h4>
                 </div>
             </div>
         </div>
-        <div class="row title-div m-0 bg-white text-center" id="F3">
+        <div class="row title-div m-0 bg-white text-center" id="F3" v-cloak>
             <div class="col-6 p-0 bg-dark">
                 <a href="javascript:;">
                     <img class="w-100" :src="p6.pic" alt="图片丢失" id="F3_img">
                 </a>
             </div>
-            <div class="col-3 p-0" v-for="(p,i) of arr5" :key="i">
+            <div class="col-3 p-0" v-for="(p,i) of arr5" :key="i" v-cloak>
                 <div class="m-0 p-0">
                     <a :href="p.href">
                         <img class="mt-4 mb-2" :src="p.pic" alt="图片丢失">
@@ -299,20 +300,20 @@
             </div> -->
         </div>
         <!-- 4F商品列表 -->
-        <div class="row m-0 title-div b-t-r-r mt-4 border-0">
+        <div class="row m-0 title-div b-t-r-r mt-4 border-0" v-cloak>
             <div class="col-12 p-0 ">
                 <div class="py-3 pl-4">
                     <h4 class="m-0">官方精选配件</h4>
                 </div>
             </div>
         </div>
-        <div class="row m-0 bg-white text-center" id="F4">
+        <div class="row m-0 bg-white text-center" id="F4" v-cloak>
             <div class="col-6 p-0 bg-dark">
                 <a href="javascript:;">
                     <img class="w-100" :src="p7.pic" alt="图片丢失" id="F4_img">
                 </a>
             </div>
-            <div class="col-3 p-0" v-for="(p,i) of arr6" :key="i">
+            <div class="col-3 p-0" v-for="(p,i) of arr6" :key="i" v-cloak>
                 <div class="m-0 p-0">
                     <a :href="p.href">
                         <img class="mt-4 mb-2" :src="p.pic" alt="图片丢失">
@@ -374,7 +375,7 @@
             </div> -->
         </div>
         <!-- 5F商品列表 -->
-        <div class="row m-0 title-div b-t-r-r mt-4 border-0">
+        <div class="row m-0 title-div b-t-r-r mt-4 border-0" v-cloak>
             <div class="col-12 p-0 ">
                 <div class="py-3 pl-4">
                     <h4 class="m-0">坚果手机及配件</h4>
@@ -449,7 +450,7 @@
             </div> -->
         </div>
         <!-- 6F论坛列表 -->
-        <div class="row m-0 title-div b-t-r-r mt-4 border-0 ">
+        <div class="row m-0 title-div b-t-r-r mt-4 border-0 " v-cloak>
             <div class="col-12 p-0 ">
                 <div class="py-3 pl-4">
                     <h4 class="m-0">论坛精选</h4>
@@ -523,17 +524,20 @@
             </div> -->
         </div>
 </div>
-<div id="top">
+<div  id="top">
     <p class="m-0">top</p> 
-    <img src="img/top.png" alt="" >
+    <img src="img/top.png" alt="">
 </div>
 </div>
+
+
 <footer id="footer_ajax"></footer>
 <script id="script_js"></script>
-<script src="js/vue.js"></script>
 <script src="js/axios.min.js"></script>
+<script src="js/vue.js"></script>
+<script src="js/index_ajax.js"></script>
 <script src="js/header_ajax.js"></script>
-<script src="js/index.js"></script>
+<!-- <script src="js/index.js"></script> -->
 <script src="js/footer_ajax.js"></script>
 </body>
 </html>

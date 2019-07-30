@@ -34,7 +34,7 @@ CREATE TABLE hammer_index_product (
 
 /*******插入首页商品数据*******/
 INSERT INTO hammer_index_product VALUES
-(NULL,'Smartisan 帆布鞋','一双踏实、舒适的帆布鞋','img/plimsollsshop.webp',199,'details2.html?lid=1','1'),
+(NULL,'Smartisan 帆布鞋','一双踏实、舒适的帆布鞋','img/plimsollsshop.webp',199,'details-shoe.html?lid=1','1'),
 (NULL,'坚果“电池形电池”移动电源','别具一格的“全能型”移动电源','img/portableF1.webp',69,'details1.html?lid=2','1'),
 (NULL,'各色DNA检测套装','各色DNA检测套装','img/DNAdetection.webp',499,'details1.html?lid=3','1'),
 (NULL,'Smartisan T恤 皇帝的新装','&nbsp;','img/Tshit.webp',149,'details1.html?lid=4','1'),
@@ -73,7 +73,7 @@ INSERT INTO hammer_index_product VALUES
 
 /*****首页6F论坛数据*****/
 CREATE TABLE hammer_index_F6 (
-	Fid INT PRIMARY KEY AUTO_INCREMENT,
+	lid INT PRIMARY KEY AUTO_INCREMENT,
 	title VARCHAR(128),
 	subtitle VARCHAR(128),
 	pic VARCHAR(128)
@@ -86,8 +86,13 @@ CREATE TABLE hammer_index_F6 (
 
 
 
-
-
+/*****详情页信息与图片******/
+CREATE TABLE hammer_details_products(
+	lid INT PRIMARY KEY AUTO_INCREMENT,
+	title VARCHAR(128),
+	subtitle VARCHAR(128),
+	price DECIMAL(10,2),
+);
 
 
 

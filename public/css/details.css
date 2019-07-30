@@ -203,6 +203,7 @@ table td{
 .F1-details-div h4{
 	color: #f00;
 }
+.carousel-item {display:none;}
 .carousel-item img{
 	cursor: pointer;
 }

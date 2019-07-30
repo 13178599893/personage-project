@@ -1,11 +1,12 @@
 $(function(){
 
-        $("#banner-details").on("mouseenter","[data-target='#banner-details']",function(){
+        $("#banner-details").on("mouseenter","img[data-target='#banner-details']",function(){
                 $this=$(this);
-                $(".md-img").attr("src",`${$this.attr('data-replace')}`)
+                $(".active .md-img").attr("src",`${$this.attr('data-replace')}`)
                 console.log($(".md-img"))
                 console.log($this.attr('data-replace'))
         })
+        
     //不可删
 
     $("#btn_change").on("click","button",function(){
