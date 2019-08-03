@@ -12,6 +12,7 @@ $(function(){
     $("#btn_change").on("click","button",function(){
             $this=$(this)
             var $details_price=parseInt( $("#details_price").html().slice(1))
+            console.log($("#details_price").html().slice(1))
             console.log($details_price)
             
             var n=parseInt($("#btn_change>input:text").val())
@@ -29,6 +30,7 @@ $(function(){
         }
         var $subprice=$details_price*n
         $("#join_price").html(`¥${ $subprice}`)
+        console.log($subprice)
         $("#btn_change>input:text").val(`${n}`);
         $("#amount").html(`Smartisan帆布鞋x${n}`)
     })
