@@ -1,98 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>Document</title>
-<!-- 引入4个文件,必须注意导入顺序 -->
-<link rel="stylesheet" href="css/normalize.css">
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/animate.css">
-<script src="js/jquery.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="css/details.css">
-<link rel="stylesheet" href="css/join_shopcart.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- 引入4个文件,必须注意导入顺序 -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/vue.js"></script>
+    <script src="js/axios.min.js"></script>
+    <link rel="stylesheet" href="css/details.css" />
+    <link rel="stylesheet" href="css/join_shopcart.css" />
+  </head>
+  <body>
     <header id="header_ajax"></header>
-<div class="container">
-    <div class="row m-0 bg-white bg-F1 mt-5">
+    <div class="container" id="app">
+      <div class="row m-0 bg-white bg-F1 mt-5">
         <div class="col-6 p-0 ">
-            <div class="F1-details-div carousel" id="banner-details">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div>
-                            <img  id="detail-img1" class="md-img" src="img/blackshoes.webp" alt="图片丢失">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div>
-                            <img  src="img/Whiteshoes.webp" class="md-img" alt="图片丢失">
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div>
-                            <img  src="img/blueshoes.webp" class="md-img" alt="图片丢失">
-                        </div>
-                    </div>       
+          <div class="F1-details-div carousel text-center" id="banner-details" style="position:relative;">
+            <div
+              class="carousel-inner"
+              
+            >
+              <div class="carousel-item active">
+                <div>
+                  <img
+                    id="detail-img1"
+                    class="md-img"
+                    :src="res.picblack"
+                    alt="图片丢失"
+                  />
                 </div>
+              </div>
+              <div class="carousel-item">
+                <div>
+                  <img :src="res.picwhite" class="md-img" alt="图片丢失" />
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div>
+                  <img :src="res.picblue" class="md-img" alt="图片丢失" />
+                </div>
+              </div>
             </div>
+            <div
+              class="mask"
+              :style="maskStyle"
+              :class="{'d-n':!maskShow}"></div>
+              <div class="mask-big" style="width: 100%;height: 100%;position: absolute;z-index:10000; top:0px;left:0;" @mouseover="toggle"
+              @mouseout="toggle"
+              @mousemove="maskMove">
+              </div>
+          </div>
+         
+        </div>
+        <div id="lgImg">
+          <img
+            :src="bigImgs[bigIndex]"
+            :style="lgPosition"
+            :class="{'d-n':!maskShow}"
+          />
         </div>
         <div class="col-6 p-0">
-            <div class="F1-details-div">
-                <h3 class="mb-4">Smartisan 帆布鞋</h3>
-                <h6 class="text-muted mb-mypx d-inline-block">一双踏实、舒适的帆布鞋</h6>
-                <h4 class="d-inline-block ml-45" id="details_price">¥199.00</h4>
-                <hr class="m-0">
-            </div>
-            <div class="details-F2">
-                <span class="mr-5">颜色选择</span>
-                <div class="d-inline-block details-circle mr-5">
-                    <div class="s1">
-                        <div class="s2">
-                            <div class="s3 btn mr-3" data-target="#banner-details" data-slide-to="0" ></div>
-                        </div>
-                    </div>
+          <div class="F1-details-div">
+            <h3 class="mb-4">{{ res.title }}</h3>
+            <h6 class="text-muted mb-mypx d-inline-block">
+              {{ res.subtitle }}
+            </h6>
+            <h4 class="d-inline-block ml-30" id="details_price">
+              ¥{{ res.price }}.00
+            </h4>
+            <hr class="m-0" />
+          </div>
+          <div class="details-F2" @click="handleClick">
+            <span class="mr-5">颜色选择</span>
+            <div class="d-inline-block details-circle mr-5">
+              <div class="s1">
+                <div class="s2">
+                  <div
+                    class="s3 btn mr-3"
+                    data-target="#banner-details"
+                    data-slide-to="0"
+                    @click="handleClick"
+                  ></div>
                 </div>
-                <div class="d-inline-block details-circle mr-5">
-                    <div class="s4">
-                        <div class="s5">
-                            <div class="s6 btn mr-3" data-target="#banner-details"  data-slide-to="1" ></div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="d-inline-block details-circle mr-5">
+              <div class="s4">
+                <div class="s5">
+                  <div
+                    class="s6 btn mr-3"
+                    data-target="#banner-details"
+                    data-slide-to="1"
+                  ></div>
                 </div>
-                <div class="d-inline-block details-circle mr-5">
-                    <div class="s7">
-                        <div class="s8">
-                            <div class="s9 btn mr-3" data-target="#banner-details" data-slide-to="2" ></div>
-                        </div>
-                    </div>
+              </div>
+            </div>
+            <div class="d-inline-block details-circle mr-5">
+              <div class="s7">
+                <div class="s8">
+                  <div
+                    class="s9 btn mr-3"
+                    data-target="#banner-details"
+                    data-slide-to="2"
+                  ></div>
                 </div>
+              </div>
             </div>
-            
-            <div class="details-F5" id="btn_change">
-                <span class="mr-5">数量选择</span>
-                <button>-</button>
-                <input type="text" value="1" class="w-25 btn btn-outline-light">
-                <button>+</button>
-            </div>
-            <div class="details-F4">
-                <span class="mr-5">服务说明</span>
-                <span href="javascript:;" >*拆封后不支持七天无理由退货*</span>
-            </div>
+          </div>
+
+          <div class="details-F5" id="btn_change">
+            <span class="mr-5">数量选择</span>
+            <button>-</button>
+            <input type="text" value="1" class="w-25 btn btn-outline-light" />
+            <button>+</button>
+            <span class="ml-2 text-muted">库存:{{ res.sku }}</span>
+          </div>
+          <div class="details-F4">
+            <span class="mr-5">服务说明</span>
+            <span href="javascript:;">*拆封后不支持七天无理由退货*</span>
+          </div>
         </div>
-    </div>
-    <div class="row m-0 ">
+      </div>
+      <div class="row m-0 ">
         <div class="col-12 p-0">
-            <div class="mt-5b">
-                <h4 class="m-0">产品信息</h4>
-            </div>
+          <div class="mt-5b">
+            <h4 class="m-0">产品信息</h4>
+          </div>
         </div>
         <div class="col-12 p-0 bg-white bg-F2">
-            <img class="w-100" src="img/detailsshoe-llg1.webp" alt="图片丢失">
-            <img class="w-100" src="img/detailsshoe-llg2.webp" alt="图片丢失">
+          <img
+            v-for="(p,i) of list"
+            :key="i"
+            class="w-100"
+            :src="p"
+            alt="图片丢失"
+          />
+          <!-- <img class="w-100" src="img/detailsshoe-llg2.webp" alt="图片丢失">
             <img class="w-100" src="img/detailsshoe3.webp" alt="图片丢失">
             <img class="w-100" src="img/detailsshoe4.webp" alt="图片丢失">
             <img class="w-100" src="img/detailsshoe5.webp" alt="图片丢失">
@@ -101,18 +152,104 @@
             <img class="w-100" src="img/detailsshoe8.webp" alt="图片丢失">
             <img class="w-100" src="img/detailsshoe9.webp" alt="图片丢失">
             <img class="w-100" src="img/detailsshoe10.webp" alt="图片丢失">
-            <img class="w-100" src="img/detailsshoe11.webp" alt="图片丢失">
+            <img class="w-100" src="img/detailsshoe11.webp" alt="图片丢失"> -->
         </div>
+      </div>
     </div>
-</div>
-<div id="joincart"></div>
-<hr class="p-0 m-0">
+
+    <div id="joincart"></div>
+    <hr class="p-0 m-0" />
     <footer id="footer_ajax"></footer>
+    <script>
+      new Vue({
+        el: "#app",
+        data() {
+          return {
+            res: {},
+            list: [],
+            maskShow: false,
+            maskStyle: { left: 40, top: 40 },
+            lgPosition: { left: 0, top: 0, zIndex: 0 },
+            bigIndex: 0,
+            bigImgs: []
+          };
+        },
+
+        methods: {
+          handleClick(e) {
+            this.bigIndex = e.target.dataset.slideTo;
+            console.log(this.bigIndex);
+            let res = this.res;
+            console.log(res);
+            this.bigImgs = [res.picblack, res.picwhite, res.picblue];
+            // console.log(this.bigImgs[this.bigIndex])
+          },
+          toggle() {
+            let res = this.res;
+
+            this.bigImgs = [res.picblack, res.picwhite, res.picblue];
+            this.maskShow = !this.maskShow;
+          },
+          maskMove(e) {
+            var left = e.offsetX - 100;
+            var top = e.offsetY - 100;
+            if (left < 40) {
+              left = 40;
+            } else if (left > 237) {
+              left = 237;
+            }
+            if (top < 40) {
+              top = 40;
+            } else if (top > 237) {
+              top = 237;
+            }
+            left += "px";
+            top += "px";
+            this.maskStyle = {
+              left,
+              top
+            };
+            var lgleft = parseInt(this.maskStyle.left);
+            var lgtop = parseInt(this.maskStyle.top);
+            // console.log(left);
+            // console.log(top);
+            this.lgPosition = {
+              left: (-lgleft * 2) / 1 + "px",
+              top: (-lgtop * 2) / 1 + "px",
+              zIndex: 1
+            };
+          },
+          loadMore() {
+            var lid = location.search.split("=")[1];
+            console.log(lid);
+            $.ajax({
+              url: "http://127.0.0.1:5050/details1",
+              data: { lid },
+              type: "get",
+              dataType: "JSON"
+            }).then(res => {
+              // console.log(res[0].detailspic)
+              this.res = res[0];
+              console.log(this.res);
+              var list = this.res.detailspic.split(",");
+              this.list = list;
+              console.log(this.list);
+              // console.log(item)
+            });
+          }
+        },
+        created() {
+          this.loadMore();
+        }
+      });
+    </script>
     <script id="script_js"></script>
     <script id="script__js"></script>
+
     <script src="js/details.js"></script>
     <script src="js/header_ajax.js"></script>
+
     <script src="js/footer_ajax.js"></script>
     <script src="js/joincart_ajax.js"></script>
-</body>
+  </body>
 </html>

@@ -140,7 +140,9 @@ body{
 	margin-top:30px; 
 	margin-bottom:30px; 
 }
-
+.ml-45{
+	margin-left:45%;
+}
 
 .details-F3
 {
@@ -197,9 +199,10 @@ table td{
 	margin-right:20% !important;
 }
 
-.ml-45{
-	margin-left: 45%;
+.ml-30{
+	margin-left: 25%;
 }
+
 .F1-details-div h4{
 	color: #f00;
 }
@@ -253,3 +256,35 @@ input.btn-outline-light{
 .ml-19{
 	margin-left:19% !important;
 }
+#banner-details{
+	line-height: 524px;
+}
+#banner-details .mask{
+	width: 237px;
+	
+	height: 237px;
+	position: absolute;
+	top:40px;
+	left:40px;
+	background-color: rgba(231, 252, 174,.3);
+	z-index: 1112;
+}
+ .d-n{
+	display: none;
+}
+#lgImg{
+	position: absolute;
+	left: 45%;
+	top: 188px;
+	width: 525px;
+	height: 510px;
+	overflow: hidden;
+}
+#lgImg>img{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width: 1000px;
+}
+
+
