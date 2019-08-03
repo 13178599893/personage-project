@@ -24,10 +24,7 @@
       <div class="row m-0 bg-white bg-F1 mt-5">
         <div class="col-6 p-0 ">
           <div class="F1-details-div carousel text-center" id="banner-details" style="position:relative;">
-            <div
-              class="carousel-inner"
-              
-            >
+            <div class="carousel-inner">
               <div class="carousel-item active">
                 <div>
                   <img
@@ -52,11 +49,12 @@
             <div
               class="mask"
               :style="maskStyle"
-              :class="{'d-n':!maskShow}"></div>
-              <div class="mask-big" style="width: 100%;height: 100%;position: absolute;z-index:10000; top:0px;left:0;" @mouseover="toggle"
+              :class="{'d-n':!maskShow}">
+            </div>
+            <div class="mask-big" style="width: 100%;height: 100%;position: absolute;z-index:10000; top:0px;left:0;" @mouseover="toggle"
               @mouseout="toggle"
               @mousemove="maskMove">
-              </div>
+            </div>
           </div>
          
         </div>
